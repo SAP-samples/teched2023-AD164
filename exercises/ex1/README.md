@@ -131,6 +131,7 @@ define table zad164travel_000 {
        association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
        association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
        association [1..1] to zad164_r_overall_status_vh  as _OverallStatus  on $projection.OverallStatus = _OverallStatus.OverallStatus
+       association [0..1] to I_Currency                  as _Currency       on $projection.CurrencyCode = _Currency.Currency
      {
        key travel_uuid as TravelUuid,
        travel_id             as TravelId,
@@ -160,7 +161,8 @@ define table zad164travel_000 {
        /* Associations */
        _Agency,
        _Customer,
-       _OverallStatus
+       _OverallStatus,
+       _Currency
        
      }
 
