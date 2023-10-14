@@ -61,35 +61,35 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
  
       **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
          
-<pre lang="ABAP">
-@EndUserText.label : 'Persistence for Travel Booking XXX'
-@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-@AbapCatalog.tableCategory : #TRANSPARENT
-@AbapCatalog.deliveryClass : #A
-@AbapCatalog.dataMaintenance : #RESTRICTED
-define table zad164travel_000 {
-  key client            : abap.clnt not null;
-  key travel_uuid       : sysuuid_x16 not null;
-  travel_id             : zad164_travel_id not null;
-  agency_id             : zad164_agency_id not null;
-  customer_id           : zad164_customer_id not null;
-  begin_date            : zad164_begin_date;
-  end_date              : zad164_end_date;
-  @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
-  booking_fee           : zad164_booking_fee;
-  @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
-  total_price           : zad164_total_price;
-  currency_code         : zad164_currency_code;
-  description           : zad164_description;
-  overall_status        : zad164_overall_status;
-  local_created_by      : abp_creation_user;
-  local_created_at      : abp_creation_tstmpl;
-  local_last_changed_by : abp_locinst_lastchange_user;
-  local_last_changed_at : abp_locinst_lastchange_tstmpl;
-  last_changed_at       : abp_lastchange_tstmpl;
-
-}
-</pre>
+  <pre lang="ABAP">
+  @EndUserText.label : 'Persistence for Travel Booking XXX'
+  @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+  @AbapCatalog.tableCategory : #TRANSPARENT
+  @AbapCatalog.deliveryClass : #A
+  @AbapCatalog.dataMaintenance : #RESTRICTED
+  define table zad164travel_XXX {
+    key client            : abap.clnt not null;
+    key travel_uuid       : sysuuid_x16 not null;
+    travel_id             : zad164_travel_id not null;
+    agency_id             : zad164_agency_id not null;
+    customer_id           : zad164_customer_id not null;
+    begin_date            : zad164_begin_date;
+    end_date              : zad164_end_date;
+    @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+    booking_fee           : zad164_booking_fee;
+    @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+    total_price           : zad164_total_price;
+    currency_code         : zad164_currency_code;
+    description           : zad164_description;
+    overall_status        : zad164_overall_status;
+    local_created_by      : abp_creation_user;
+    local_created_at      : abp_creation_tstmpl;
+    local_last_changed_by : abp_locinst_lastchange_user;
+    local_last_changed_at : abp_locinst_lastchange_tstmpl;
+    last_changed_at       : abp_lastchange_tstmpl;
+  
+  }
+  </pre>
        
    8. Save ![save icon](images/adt_save.png) and activate ![activate icon](images/adt_activate.png) the changes.
 </details>
@@ -106,7 +106,7 @@ define table zad164travel_000 {
   2. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
-   - Description: **`Data model for Travel App`** .   
+   - Description: **`Data model for Travel App XXX`** .   
    ![](images/AD164_E1_3_2.png)
     
   3.Select your transport request and click **Next**.
@@ -124,9 +124,9 @@ define table zad164travel_000 {
      
     ```ABAP
      @AccessControl.authorizationCheck: #NOT_REQUIRED
-     @EndUserText.label: 'Data model for Travel App'
-     define root view entity zad164_r_travel_000 
-       as select from zad164travel_000 as travel_000
+     @EndUserText.label: 'Data model for Travel App XXX'
+     define root view entity zad164_r_travel_XXX 
+       as select from zad164travel_000 as travel_XXX
        
        association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
        association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
@@ -177,6 +177,81 @@ define table zad164travel_000 {
 
  <details>
   <summary>Click to expand!</summary>
+
+    1.	Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Data Definition** from the context menu.
+   ![](images/AD164_E1_4_1.png)
+
+  2. Maintain the information provided below and click **Next >**.
+
+   - Name: **`ZAD164_C_TRAVEL_XXX`**
+   - Description: **`Projection for Travel App XXX`** .   
+   ![](images/AD164_E1_4_2.png)
+    
+  3.Select your transport request and click **Next**.
+    ![](images/AD164_E1_4_3.png)
+    
+  4. Select **Define Projection View** from the list of templates and click on **Finish**
+    ![](images/AD164_E1_4_4.png)
+
+  5. A CDS projection entity with the following data definition should get generated
+     ![](images/AD164_E1_5_5.png)
+     
+  7. Replace the default source code with following code snippet:
+   
+    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+     
+    ```ABAP
+     @EndUserText.label: 'Travel Projection View'
+     @AccessControl.authorizationCheck: #CHECK
+     
+     @Metadata.allowExtensions: true
+     @Search.searchable: true
+     @ObjectModel.semanticKey: ['TravelID']
+     define root view entity zad164_c_travel_XXX 
+       provider contract transactional_query
+       as projection on zad164_r_travel_XXX
+     {
+       key TravelUuid,
+           
+           @Search.defaultSearchElement: true
+           TravelId,
+     
+           @Search.defaultSearchElement: true
+           @ObjectModel.text.element: ['AgencyName']
+           AgencyId,
+           _Agency.Name              as AgencyName,
+     
+     
+           @Search.defaultSearchElement: true
+           @ObjectModel.text.element: ['CustomerName']
+           CustomerId,
+           _Customer.LastName        as CustomerName,
+     
+           BeginDate,
+           EndDate,
+     
+           BookingFee,
+           TotalPrice,
+           CurrencyCode,
+     
+           Description,
+     
+           @ObjectModel.text.element: ['OverallStatusText']
+           OverallStatus,
+           _OverallStatus._Text.Text as OverallStatusText : localized,
+     
+           LocalLastChangedAt,
+     
+           _Agency,
+           _Currency,
+           _Customer,
+           _OverallStatus
+     }
+
+     ```
+     
+   8.	Save and activate the object.
+       
  </details>
  
 ## Exercise 1.5 Create Behavior Defintion for CDS data model
