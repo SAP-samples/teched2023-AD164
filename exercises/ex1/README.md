@@ -337,6 +337,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 2.	Maintain a description and click **Next >**.
 
      - Description: _**`Behavior for Travel App XXX`**_
+     - Retain **Implementation Tyoe:** as **`Managed`**
+     - Click **Next**
      
      ![](images/AD164_E1_5_2.png)
 
@@ -347,7 +349,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 4.  A behavior definition for the CDS  entity with the following details should get generated
      ![](images/AD164_E1_5_4.png)
  
-6.	Replace the default source code with following code snippet:
+5.	Replace the default source code with following code snippet:
 
       ```ABAP
        managed implementation in class zbp_ad164_r_travel_000 unique;
@@ -392,11 +394,21 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        ```
  
 7.	Save and activate the object.
-8.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name to auto generate the behavior implementation class.
+8.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
    ![](images/AD164_E1_5_5.png)
-9.	A behavior implemenation class for the behavior definition with the following details should get generated
+ 9. Maintain a description and click **Next >**.
+
+     - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
+     - Click **Next**
    ![](images/AD164_E1_5_6.png)
-10. Save and activate the object.
+
+10. Select your transport request and click **Finish**.
+   ![](images/AD164_E1_5_6.png)
+    
+12.	A behavior implemenation class for the behavior definition with the following details should get generated
+   ![](images/AD164_E1_5_7.png)
+
+13. Save and activate the object.
    
  </details>
  
