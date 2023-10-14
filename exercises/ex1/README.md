@@ -120,7 +120,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
   7. Replace the default source code with following code snippet:
    
-    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
      
     ```ABAP
      @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -177,15 +177,15 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
-
-    1.	Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Data Definition** from the context menu.
-   ![](images/AD164_E1_4_1.png)
+  
+  1.	Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Data Definition** from the context menu.
+    ![](images/AD164_E1_4_1.png)
 
   2. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_C_TRAVEL_XXX`**
    - Description: **`Projection for Travel App XXX`** .   
-   ![](images/AD164_E1_4_2.png)
+    ![](images/AD164_E1_4_2.png)
     
   3.Select your transport request and click **Next**.
     ![](images/AD164_E1_4_3.png)
@@ -198,7 +198,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
   7. Replace the default source code with following code snippet:
    
-    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+
      
     ```ABAP
      @EndUserText.label: 'Travel Projection View'
