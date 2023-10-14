@@ -25,14 +25,15 @@ We also have demos showcasing -
 
  - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modeled with CDS entities to read and expose relevant data to the oData UI service ( please note this is the similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define the how the data needs to be presented in the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implemtations ( BIL ) whilc also includes two user defined custom actions APPROVE and REJECT, you will then expose releavnt RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
 We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations we have enriched our data model in the MDE.
+
 Your application will look like this:
- ![Custom business application]( ex0/images/Introduction2.png )
+ ![Custom business application]( ex0/images/TravelBookingApprovalApp.png )
  
  - Now, the customer/partner wishes to enhance the existing travel booking approval  application with ratings from the Agency.  When an travel booking is being approved, it is good to see the agency review rating in the list. Using the developer extensibility and underlying datamodels in SAP S/4HANA OnPremise ABAP Environment, custom code can be added to existing business logic of the travel approval BO to fulfill this requirement.
 
  Your application will finally look like this:
 
- ![Custom business application]( ex0/images/Introduction2.png )
+ ![Custom business application]( ex0/images/TravelBookingApprovalAppWithAgencyRating.png )
  
 </details>
 
