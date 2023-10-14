@@ -601,6 +601,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 7. Click on **Fiori elements App Preview** to preview your application in the browser.
     ![](images/AD164_E1_8_6.png)
+   
  </details>
     
 2.	Click here.
