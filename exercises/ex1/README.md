@@ -334,22 +334,22 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
     ![](images/AD164_E1_5_1.png)
  
-2.	Maintain a description and click **Next >**.
+  2.	Maintain a description and click **Next >**.
 
-     - Description: _**`Behavior for Travel App XXX`**_
-     - Retain **Implementation Tyoe:** as **`Managed`**
-     - Click **Next**
+   - Description: _**`Behavior for Travel App XXX`**_
+   - Retain **Implementation Tyoe:** as **`Managed`*
+   - Click **Next**
      
      ![](images/AD164_E1_5_2.png)
-
-3.	Select your transport request and click **Finish**.
+ 
+  3.	Select your transport request and click **Finish**.
  
      ![](images/AD164_E1_5_3.png)
   	
-4.  A behavior definition for the CDS  entity with the following details should get generated
+  4.  A behavior definition for the CDS  entity with the following details should get generated
      ![](images/AD164_E1_5_4.png)
  
-5.	Replace the default source code with following code snippet:
+  5.	Replace the default source code with following code snippet:
 
       ```ABAP
        managed implementation in class zbp_ad164_r_travel_000 unique;
@@ -393,22 +393,24 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        }
        ```
  
-7.	Save and activate the object.
-8.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
+ 6.	Save and activate the object.
+ 7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
    ![](images/AD164_E1_5_5.png)
- 9. Maintain a description and click **Next >**.
+ 8. Maintain a description and click **Next >**.
 
      - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
      - Click **Next**
    ![](images/AD164_E1_5_6.png)
 
-10. Select your transport request and click **Finish**.
+ 9. Select your transport request and click **Finish**.
    ![](images/AD164_E1_5_6.png)
     
-12.	A behavior implemenation class for the behavior definition with the following details should get generated
+10.	A behavior implemenation class for the behavior definition with the following details should get generated
    ![](images/AD164_E1_5_7.png)
 
-13. Save and activate the object.
+11. Save and activate the object.
+12. A behavior implementation class with the following code should get generated
+    ![](images/AD164_E1_5_8.png)
    
  </details>
  
