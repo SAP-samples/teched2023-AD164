@@ -1,18 +1,28 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD164)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD164)
 
-# Session ID - Session Title
+# AD164 - Introduction of ABAP Cloud to classic ABAP developers
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called AD164 - Introduction of ABAP Cloud to classic ABAP developers.  
 
 ## Overview
 
-This session introduces attendees to...
+This course uses the well known travel booking reference app to classic ABAPers. During the course of this session, we will go through two demos and then followed by a hands-on providing an experience on how to handcode the same in ABAP Cloud with our well known ABAP Restful Application Programming Model ( RAP ). We will have short overview of the RAP artefacts thats gets generated and will see a Fiori elements preview of the app to check the developed OData UI service. 
+Additionaly, we have a short optional HandsOn exercise to enrich our existing fiori preview and hence our app utilizing ratings from the underlying Agency data model.
+We also have demos showcasing - 
+1. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
+2. Ways to consume existing WRICEF Objects in new ABAP Cloud 
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+To carry out the exercises of this repository, you need to
+1. Install the ABAP Development Tools (ADT) for the ABAP development parts
+2. Have a browser ready, preferably Google Chrome, to see Fiori Elements preview
+
+The users for the development environment during the course will be provided to you by the hosts.
+
+Go to Getting Started - Preparation to find out the installation details, URLs, then start with the first exercise.
 
 ## Exercises
 
