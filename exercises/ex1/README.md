@@ -35,6 +35,11 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
 
 
 ## Exercise 1.2 Create Database Table
+[^Top of page](#)
+
+<details>
+  <summary>Click to expand!</summary>
+ 
 Create a database table![table](../../images/adt_tabl.png) to store the _TravelBooking_ data.   
 A TravelBooking entity defines general data, such as the agency, customer, begin and end date of the travel, total price with the currency, description of the travel and overall status denoting the approval status 
 
@@ -83,14 +88,45 @@ define table zad164travel_000 {
 </pre>
        
    6. Save ![save icon](../../images/adt_save.png) and activate ![activate icon](../../images/adt_activate.png) the changes.
+</details>
 
 ## Exercise 1.3 Create CDS data model
-## Exercise 1.4 Create CDS projection views
-## Exercise 1.5 Create Behavior Defintion for CDS data model
-## Exercise 1.6 Create Behavior Defintion for projection views
-## Exercise 1.7 Create Your Service Definition
-## Exercise 1.8 Create Your Service Binding and Test using Fiori Elements Preview
+[^Top of page](#)
 
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
+ 
+## Exercise 1.4 Create CDS projection views
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
+## Exercise 1.5 Create Behavior Defintion for CDS data model
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
+## Exercise 1.6 Create Behavior Defintion for projection views
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
+## Exercise 1.7 Create Your Service Definition
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
+## Exercise 1.8 Create Your Service Binding and Test using Fiori Elements Preview
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+ </details>
     
 2.	Click here.
 <br>![](/exercises/ex1/images/01_02_0010.png)
