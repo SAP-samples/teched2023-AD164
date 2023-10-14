@@ -12,7 +12,8 @@ This course uses the well known travel booking reference app to classic ABAPers.
 Additionaly, we have a short optional HandsOn exercise to enrich our existing fiori preview and hence our app utilizing ratings from the underlying Agency data model.
 We also have demos showcasing - 
 1. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
-2. Ways to consume existing WRICEF Objects in new ABAP Cloud 
+2. Use ABAP Repository Object Generator in ADT to quickly generate RAP artefacts
+3. Ways to consume existing WRICEF Objects in new ABAP Cloud 
 
 ### Business Scenario 
 
@@ -21,7 +22,7 @@ We also have demos showcasing -
  
  **Create a custom BO for a specific business context**
 
- - An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This has to be realized with RESTful ABAP Programming Model(RAP). 
+ - An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This will be realized with RESTful ABAP Programming Model(RAP). 
 
  - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modeled with CDS entities to read and expose relevant data to the oData UI service ( please note this is the similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define the how the data needs to be presented in the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implemtations ( BIL ) whilc also includes two user defined custom actions APPROVE and REJECT, you will then expose releavnt RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
 We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations we have enriched our data model in the MDE.
@@ -49,10 +50,6 @@ Your application will look like this:
  </details>
  
 
-## Exercises
-[^Top of page](#)
-
-
 ## Requirements
 
 To carry out the exercises of this repository, you need to
@@ -64,35 +61,38 @@ The users for the development environment during the course will be provided to 
 Go to Getting Started - Preparation to find out the installation details, URLs, then start with the first exercise.
 
 ## Exercises
-
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+[^Top of page](#)
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 1 - Create Your Own Transaction UI Service](exercises/ex1/)
+    - [Exercise 1.1 - Create ABAP Package](exercises/ex1#exercise-11-sub-exercise-1-description)
+    - [Exercise 1.2 - Create Database Table](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.3 - Create CDS data model](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.4 - Create CDS projection views ](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.5 - Create Behavior Defintion for CDS data model](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.6 - Create Behavior Defintion for projection views](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.7 - Create Your Service Definition](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.8 - Create Your Service Binding and Test using Fiori Elements Preview](exercises/ex1#exercise-12-sub-exercise-2-description)
 
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
-## Contributing
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
-
-## Code of Conduct
-Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
+- [Exercise 2 - Enhance the app with Agency ratings](exercises/ex2/)
+    - [Exercise 2.1 - Use Extended BO for Agency Review Ratings in the current data model](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.2 - Test](exercises/ex2#exercise-22-sub-exercise-2-description)
 
 ## How to obtain support
+[^Top of page](#)
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../../../issues) tab.
+
+
+## Further Information
+[^Top of page](#)
+
+You can find further information on the different topics here: 
+- [SAP S/4HANA Cloud ABAP Environment](https://www.sap.com/about/events/teched-news-guide/composable-enterprise-solutions.html)
+- [New ABAP Platform Extensibility Options for SAP S/4HANA](https://blogs.sap.com/2021/11/19/new-abap-platform-extensibility-options-in-2021/)
+- [Getting Started with the ABAP RESTful Application Programming Model (RAP)](https://blogs.sap.com/2019/10/25/getting-started-with-the-abap-restful-programming-model/)
+- [ABAP Extensibility Topic Page @SAP Community](https://community.sap.com/topics/abap-extensibility)
+
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
