@@ -322,7 +322,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      ```
      
    13.	Save and activate the object.
-   14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.
+   14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.    
     ![](images/AD164_E1_4_9.png)
 
    15. Maintain the information provided below and click **Next >**.
@@ -331,13 +331,13 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        - Description: **`Metadata Extension for ZAD164_C_TRAVEL_XXX`** .   
     ![](images/AD164_E1_4_10.png)
 
-  10. Select your transport request and click **Finish**.
+   16. Select your transport request and click **Finish**.
     ![](images/AD164_E1_4_11.png)
 
-  11. An metadata extension for the CDS projection entity with the following metadata definition should get generated
+   17. An metadata extension for the CDS projection entity with the following metadata definition should get generated
      ![](images/AD164_E1_4_12.png)
 
-  12. Replace the default source code with following code snippet:
+   18. Replace the default source code with following code snippet:
    
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
@@ -417,7 +417,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      }
      ```
      
-   13.	Save and activate the object.
+   19.	Save and activate the object.
        
  </details>
  
