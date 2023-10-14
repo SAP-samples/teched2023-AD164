@@ -103,24 +103,28 @@ define table zad164travel_000 {
  <details>
   <summary>Click to expand!</summary>
  </details>
+ 
 ## Exercise 1.5 Create Behavior Defintion for CDS data model
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
  </details>
+ 
 ## Exercise 1.6 Create Behavior Defintion for projection views
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
  </details>
+ 
 ## Exercise 1.7 Create Your Service Definition
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
  </details>
+ 
 ## Exercise 1.8 Create Your Service Binding and Test using Fiori Elements Preview
 [^Top of page](#)
 
