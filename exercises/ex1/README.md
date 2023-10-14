@@ -27,27 +27,62 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
      ![](images/AD164_E1_1_Step2_2.png)
      ![](images/AD164_E1_1_Step2_3.png) 
  
-4.	Click **Finish** to finish creation of the package and add the package to favorite pacakges list
+4.	Click **Finish** to finish creation of the package and add the package to favorite pacakges list.
+   You should now see your new package in your Project Explorer.
      ![](images/AD164_E1_1_Final.png) 
   
 </details>
 
 
 ## Exercise 1.2 Create Database Table
+Create a database table![table](../../images/adt_tabl.png) to store the _TravelBooking_ data.   
+A TravelBooking entity defines general data, such as the agency, customer, begin and end date of the travel, total price with the currency, description of the travel and overall status denoting the approval status 
 
-After completing these steps you will have...
+   1. Right-click on your ABAP package **`ZAD164_TRAVEL_###`** and select **New** > **Other ABAP Repository Object** from the context menu.
+         
+   2. Search for **database table**, select it, and click **Next >**.
+   
+   3. Maintain the required information (`###` is your group ID) and click **Next >**.
+      - Name: **`ZAD164TRAVEL_###`**  
+      - Description: _**`Persistence for Travel Booking ###`**_                  
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+   4. Select your transport request, and click **Finish** to create the database table.
+   
+   5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
+ 
+      > **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="../../images/copyrawcontents.png" alt="table" width="30px"> appearing in the upper-right corner to copy it. 
+      
+<pre lang="ABAP">
+@EndUserText.label : 'Persistence for Travel Booking 000'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zad164travel_000 {
+  key client            : abap.clnt not null;
+  key travel_uuid       : sysuuid_x16 not null;
+  travel_id             : zrap200_travel_id not null;
+  agency_id             : zrap200_agency_id not null;
+  customer_id           : zrap200_customer_id not null;
+  begin_date            : /dmo/begin_date;
+  end_date              : /dmo/end_date;
+  @Semantics.amount.currencyCode : 'zrap200_travel_d.currency_code'
+  booking_fee           : /dmo/booking_fee;
+  @Semantics.amount.currencyCode : 'zrap200_travel_d.currency_code'
+  total_price           : /dmo/total_price;
+  currency_code         : zrap200_currency_code;
+  description           : /dmo/description;
+  overall_status        : zrap200_overall_status;
+  local_created_by      : abp_creation_user;
+  local_created_at      : abp_creation_tstmpl;
+  local_last_changed_by : abp_locinst_lastchange_user;
+  local_last_changed_at : abp_locinst_lastchange_tstmpl;
+  last_changed_at       : abp_lastchange_tstmpl;
 
-```
+}
+</pre>
+       
+   6. Save ![save icon](../../images/adt_save.png) and activate ![activate icon](../../images/adt_activate.png) the changes.
 
 ## Exercise 1.3 Create CDS data model
 ## Exercise 1.4 Create CDS projection views
