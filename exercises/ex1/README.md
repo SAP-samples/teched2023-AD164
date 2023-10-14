@@ -55,11 +55,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    
    5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
  
-      **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it.
-      
-images/CopyRawContents.png      
+      **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+         
 <pre lang="ABAP">
-@EndUserText.label : 'Persistence for Travel Booking 000'
+@EndUserText.label : 'Persistence for Travel Booking XXX'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
 @AbapCatalog.deliveryClass : #A
