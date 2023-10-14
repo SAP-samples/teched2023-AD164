@@ -581,6 +581,26 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
+  1. Right-click on your service definition **`ZAD164_SD_TRAVEL_000`** and select **New Service Binding** from the context menu.
+  
+   ![](images/AD164_E1_8_1.png)
+
+2. Maintain the information provided below and click **Next**. 
+    - Name: **`ZAD164_UI_TRAVEL_000_O4`**
+    - Description: _**`OData V4 UI service for Travel App 000`**_
+    - Binding Type: **`OData version V4 UI`**
+
+    ![](images/AD164_E1_8_2.png)
+
+3. Select your transport request and press **Finish**.
+    ![](images/AD164_E1_8_3.png)
+4. A service binding for the service definition is created and the created artefact looks like this
+    ![](images/AD164_E1_8_4.png)
+6. Activate and publish your service binding.
+    ![](images/AD164_E1_8_5.png)
+
+7. Click on **Fiori elements App Preview** to preview your application in the browser.
+    ![](images/AD164_E1_8_6.png)
  </details>
     
 2.	Click here.
