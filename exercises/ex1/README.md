@@ -351,11 +351,11 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   5.	Replace the default source code with following code snippet:
 
       ```ABAP
-       managed implementation in class zbp_ad164_r_travel_000 unique;
+       managed implementation in class zbp_ad164_r_travel_XXX unique;
        strict ( 2 );
        
-       define behavior for zad164_r_travel_000 alias travel_000
-       persistent table zad164travel_000
+       define behavior for zad164_r_travel_XXX alias zad164_travel_XXX
+       persistent table zad164travel_XXX
        lock master
        authorization master ( instance )
        etag master LocalLastChangedAt
@@ -418,6 +418,38 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
+  1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
+  
+   ![](images/AD164_E1_6_1.png)
+  
+  2.	Maintain a description and click **Next >**.
+
+      - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
+      - Click **Next**
+      
+   ![](images/AD164_E1_6_2.png)
+ 
+  3.	Select your transport request and click **Finish**.
+   ![](images/AD164_E1_6_3.png)
+  4.  A projection behavior definition for the projection CDS entity with the following details should get generated
+   ![](images/AD164_E1_6_4.png)
+ 
+5.	Replace the default source code with following with code snippet:
+
+    ```ABAP
+     projection;
+     strict ( 2 );
+     
+     define behavior for zad164_c_travel_000 alias zad164_travel_000
+     {
+     
+       use action acceptTravel;
+       use action rejectTravel;
+     }
+     ```
+ 
+6.	Save and activate the object.
+
  </details>
  
 ## Exercise 1.7 Create Your Service Definition
@@ -425,6 +457,22 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
+     
+1. Right click on projection view **`ZC_ONLINE_SHOP_XXX`** and select create **New Service Definition** from the context menu.
+
+    ![](images/sd.png)
+
+2. Maintain the information provided below and click **Next >**.
+    - Name: **`ZSD_SHOP_XXX`**
+    - Description: _**Service definition for online shop_**
+
+    ![](images/sd2.png)
+
+3. Select your transport request and press **Finish**. 
+
+    ![](images/sd3.png)
+
+4. Save and activate the object.
  </details>
  
 ## Exercise 1.8 Create Your Service Binding and Test using Fiori Elements Preview
