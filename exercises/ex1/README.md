@@ -343,7 +343,6 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      ![](images/AD164_E1_5_2.png)
  
   3.	Select your transport request and click **Finish**.
- 
      ![](images/AD164_E1_5_3.png)
   	
   4.  A behavior definition for the CDS  entity with the following details should get generated
