@@ -16,7 +16,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
   ![](images/AD164_E1_1_Step0_1.png) 
    
 1.	Right-click on the package **`ZLOCAL** and select **New > ABAP Package** from the context menu. 
-   ![](images/AD164_E1_1_Step1_1.png)
+   ![](images/AD164_E1_1_Step1.png)
   	
 3.	Maintain the information provided below and click **Next >**.  
     - Name: **`ZAD164_TRAVEL_XXX`**
