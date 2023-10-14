@@ -46,18 +46,18 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    1. Right-click on your ABAP package **`ZAD164_TRAVEL_###`** and select **New** > **Other ABAP Repository Object** from the context menu.
     ![](images/AD164_E1_2_1.png)
     
-   3. Search for **database table**, select it, and click **Next >**.
+   2. Search for **database table**, select it, and click **Next >**.
     ![](images/AD164_E1_2_2.png)
 
-   5. Maintain the required information (`###` is your group ID) and click **Next >**.
+   3. Maintain the required information (`###` is your group ID) and click **Next >**.
       - Name: **`ZAD164TRAVEL_###`**  
       - Description: _**`Persistence for Travel Booking ###`**_                  
     ![](images/AD164_E1_2_3.png)
 
-   6. Select your transport request, and click **Finish** to create the database table.
+   4. Select your transport request, and click **Finish** to create the database table.
     ![](images/AD164_E1_2_4.png)
 
-   7. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
+   5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
  
       **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
          
@@ -91,7 +91,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   }
   </pre>
        
-   8. Save ![save icon](images/adt_save.png) and activate ![activate icon](images/adt_activate.png) the changes.
+   6. Save ![save icon](images/adt_save.png) and activate ![activate icon](images/adt_activate.png) the changes.
 </details>
 
 ## Exercise 1.3 Create CDS data model
@@ -107,18 +107,18 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: **`Data model for Travel App XXX`** .   
-   ![](images/AD164_E1_3_2.png)
+     ![](images/AD164_E1_3_2.png)
     
   3.Select your transport request and click **Next**.
-    ![](images/AD164_E1_3_3.png)
+     ![](images/AD164_E1_3_3.png)
     
   4. Select **Define Root View Entity** from the list of templates and click on **Finish**
-    ![](images/AD164_E1_3_4.png)
+     ![](images/AD164_E1_3_4.png)
 
   5. A CDS entity with the following data definition should get generated
      ![](images/AD164_E1_3_5.png)
      
-  7. Replace the default source code with following code snippet:
+  6. Replace the default source code with following code snippet:
    
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
      
@@ -168,21 +168,23 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
      ```
      
-   8.	Save and activate the object.
-   9.	Define Access Control for the above CDS Root view by right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
+   7.	Save and activate the object.
+   8.	Define Access Control for the above CDS Root view by right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
       ![](images/AD164_E1_3_6_0.png)
-  10. Maintain the information provided below and click **Next >**.
+     	
+   10. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: **`Access Control for ZAD164_R_TRAVEL_XXX`** .   
-    ![](images/AD164_E1_3_6.png)
+     ![](images/AD164_E1_3_6.png)
 
-  11. Select your transport request and click **Next**.
+  10. Select your transport request and click **Finish**.
     ![](images/AD164_E1_3_7.png)
-  12. An access control for the CDS projection entity with the following access control definition should get generated
+
+  11. An access control for the CDS projection entity with the following access control definition should get generated
      ![](images/AD164_E1_3_8.png)
 
-  14. Replace the default source code with following code snippet:
+  12. Replace the default source code with following code snippet:
    
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
@@ -202,7 +204,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
      ```
      
-   15.	Save and activate the object.
+   13.	Save and activate the object.
       
  </details>
  
@@ -228,9 +230,9 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
     ![](images/AD164_E1_4_4.png)
 
   5. A CDS projection entity with the following data definition should get generated
-     ![](images/AD164_E1_4_5.png)
+    ![](images/AD164_E1_4_5.png)
      
-  7. Replace the default source code with following code snippet:
+  6. Replace the default source code with following code snippet:
    
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
@@ -285,22 +287,22 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
      ```
      
-   8.	Save and activate the object.
-   9.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
-      ![](images/AD164_E1_4_6_0.png)
-  10. Maintain the information provided below and click **Next >**.
+   7.	Save and activate the object.
+   8.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
+    ![](images/AD164_E1_4_6_0.png)
+   9. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_C_TRAVEL_XXX`**
    - Description: **`Access Control for ZAD164_C_TRAVEL_XXX`** .   
     ![](images/AD164_E1_4_6.png)
 
-  11. Select your transport request and click **Next**.
+  10. Select your transport request and click **Next**.
     ![](images/AD164_E1_4_7.png)
 
-  13. An access control for the CDS projection entity with the following access control definition should get generated
+  11. An access control for the CDS projection entity with the following access control definition should get generated
      ![](images/AD164_E1_4_8.png)
 
-  14. Replace the default source code with following code snippet:
+  12. Replace the default source code with following code snippet:
    
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
@@ -319,7 +321,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
      ```
      
-   15.	Save and activate the object.
+   13.	Save and activate the object.
        
  </details>
  
