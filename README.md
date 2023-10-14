@@ -14,6 +14,45 @@ We also have demos showcasing -
 1. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
 2. Ways to consume existing WRICEF Objects in new ABAP Cloud 
 
+### Business Scenario 
+
+<details>
+ <summary>Click to expand!</summary>
+ 
+ **Create a custom BO for a specific business context**
+
+ - An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This has to be realized with RESTful ABAP Programming Model(RAP). 
+
+ - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modeled with CDS entities to read and expose relevant data to the oData UI service ( please note this is the similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define the how the data needs to be presented in the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implemtations ( BIL ) whilc also includes two user defined custom actions APPROVE and REJECT, you will then expose releavnt RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
+We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations we have enriched our data model in the MDE.
+Your application will look like this:
+ ![Custom business application]( ex0/images/Introduction2.png )
+ 
+ - Now, the customer/partner wishes to enhance the existing travel booking approval  application with ratings from the Agency.  When an travel booking is being approved, it is good to see the agency review rating in the list. Using the developer extensibility and underlying datamodels in SAP S/4HANA OnPremise ABAP Environment, custom code can be added to existing business logic of the travel approval BO to fulfill this requirement.
+
+ Your application will finally look like this:
+
+ ![Custom business application]( ex0/images/Introduction2.png )
+ 
+</details>
+
+### Architecture Overview
+<details>
+ <summary>Click to expand!</summary>
+
+ The figure below illustrates the high-level architecture components of the ABAP RESTful Application Programming Model (RAP). It shows the main technologies and artefacts needed to build an SAP Fiori app or a Web API with RAP from a design time perspective.  
+ 
+ ![architecture](ex0/images/rap_bigpicture.png)
+ 
+ You can find a more information on the various RAP concepts on the SAP Help Portal.
+
+ </details>
+ 
+
+## Exercises
+[^Top of page](#)
+
+
 ## Requirements
 
 To carry out the exercises of this repository, you need to
