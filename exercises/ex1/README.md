@@ -9,6 +9,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
 
  <details>
   <summary>Click to expand!</summary>
+  
 0.  Optional [ If already exists ]   : Add **ZLOCAL** to **Favorite Packages** by right-click on the favourite packages and select **Add Package..**. 
    ![](images/AD164_E1_1_Step0_0.png)
     In the pop up for **Select an ABAP Package**, type ZLOCAL as the search term and choose the option **ZLOCAL** under the **Matching items:** window and click on **OK**.
