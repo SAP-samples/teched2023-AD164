@@ -461,19 +461,19 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    1. Right click on projection view **`ZAD164_C_TRAVEL_XXX`** and select create **New Service Definition** from the context menu.
       ![](images/AD164_E1_7_1.png)
      
-   2. Maintain the information provided below and click **Next >**.
+   2. Maintain the information provided below and click **Next >**
     - Name: **`ZAD164_SD_TRAVEL_XXX`**
-    - Description: _**Service Definition for Travel App XXX**
+    - Description: **Service Definition for Travel App XXX**
       
       ![](images/AD164_E1_7_2.png)
 
-   3. Select your transport request and press **Finish**. 
+   4. Select your transport request and press **Finish**. 
 
       ![](images/AD164_E1_7_3.png)
-   4. A service definition for the projection CDS entity with the following details should get generated
+   5. A service definition for the projection CDS entity with the following details should get generated
       ![](images/AD164_E1_7_4.png)
 
-   5. Provide an alias name as `Travel` for the cds projection view that is being exposed. The service definition should now look like this
+   6. Provide an alias name as `Travel` for the cds projection view that is being exposed. The service definition should now look like this
       ![](images/AD164_E1_7_5.png)
 
    7. Save and activate the object.
