@@ -330,6 +330,74 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
+  
+  1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
+    ![](images/AD164_E1_5_1.png)
+ 
+2.	Maintain a description and click **Next >**.
+
+     - Description: _**`Behavior for Travel App XXX`**_
+     
+     ![](images/AD164_E1_5_2.png)
+
+3.	Select your transport request and click **Finish**.
+ 
+     ![](images/AD164_E1_5_3.png)
+  	
+4.  A behavior definition for the CDS  entity with the following details should get generated
+     ![](images/AD164_E1_5_4.png)
+ 
+6.	Replace the default source code with following code snippet:
+
+      ```ABAP
+       managed implementation in class zbp_ad164_r_travel_000 unique;
+       strict ( 2 );
+       
+       define behavior for zad164_r_travel_000 alias travel_000
+       persistent table zad164travel_000
+       lock master
+       authorization master ( instance )
+       etag master LocalLastChangedAt
+       {
+       //  create;
+       //  update;
+       //  delete;
+         internal update;
+       
+         field ( readonly, numbering : managed ) TravelUUID;
+       
+         action acceptTravel result [1] $self;
+         action rejectTravel result [1] $self;
+       
+         mapping for zad164travel_000
+           {
+             TravelUUID         = travel_uuid;
+             TravelID           = travel_id;
+             AgencyID           = agency_id;
+             CustomerID         = customer_id;
+             BeginDate          = begin_date;
+             EndDate            = end_date;
+             BookingFee         = booking_fee;
+             TotalPrice         = total_price;
+             CurrencyCode       = currency_code;
+             Description        = description;
+             OverallStatus      = overall_status;
+             LastChangedAt      = last_changed_at;
+             LocalCreatedAt     = local_created_at;
+             LocalCreatedBy     = local_created_by;
+             LocalLastChangedAt = local_last_changed_at;
+             LocalLastChangedBy = local_last_changed_by;
+           }
+       }
+       ```
+ 
+7.	Save and activate the object.
+8.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name to auto generate the behavior implementation class.
+   ![](images/AD164_E1_5_5.png)
+9.	A behavior implemenation class for the behavior definition with the following details should get generated
+   ![](images/AD164_E1_5_6.png)
+10. Save and activate the object.
+   
  </details>
  
 ## Exercise 1.6 Create Behavior Defintion for projection views
