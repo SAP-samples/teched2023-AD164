@@ -99,6 +99,67 @@ define table zad164travel_000 {
 
  <details>
   <summary>Click to expand!</summary>
+  
+  1.	Right-click on the data base table  **`ZAD164TRAVEL_XXX`** and select **New Data Definition** from the context menu.
+   ![](images/AD164_E1_3_1.png
+
+  2. Maintain the information provided below and click **Next >**.
+
+   - Name: **`ZAD164_R_TRAVEL_XXX`**
+   - Description: **`Data model for Travel App`** .   
+   ![](images/AD164_E1_3_2.png
+    
+  3.Select your transport request and click **Next**.
+    ![](images/AD164_E1_3_3.png
+    
+  4. Select **Define Root View Entity** from the list of templates and click on **Finish**
+    ![](images/AD164_E1_3_4.png
+
+  5. A CDS entity with the following data definition should get generated
+     ![](images/AD164_E1_3_5.png
+     
+  7. Replace the default source code with following code snippet:
+
+    ```ABAP
+     @AccessControl.authorizationCheck: #NOT_REQUIRED
+     @EndUserText.label: 'Data model for Travel App'
+     define root view entity ZAD164_R_TRAVEL_000 
+       as select from zad164travel_000 as travel_000
+       
+       association [0..1] to ZAD164_R_AGENCY          as _Agency      on $projection.AgencyId = _Agency.AgencyId
+     {
+       key travel_uuid as TravelUuid,
+       travel_id             as TravelId,
+       agency_id             as AgencyId,
+       customer_id           as CustomerId,
+       begin_date            as BeginDate,
+       end_date              as EndDate,
+       @Semantics.amount.currencyCode: 'CurrencyCode'
+       booking_fee           as BookingFee,
+       @Semantics.amount.currencyCode: 'CurrencyCode'
+       total_price           as TotalPrice,
+       currency_code         as CurrencyCode,
+       description           as Description,
+       overall_status        as OverallStatus,
+       @Semantics.user.createdBy: true
+       local_created_by      as LocalCreatedBy,
+       @Semantics.systemDateTime.createdAt: true
+       local_created_at      as LocalCreatedAt,
+       @Semantics.user.lastChangedBy: true
+       local_last_changed_by as LocalLastChangedBy,
+       @Semantics.systemDateTime.localInstanceLastChangedAt: true
+       local_last_changed_at as LocalLastChangedAt,
+     
+       @Semantics.systemDateTime.lastChangedAt: true
+       last_changed_at       as LastChangedAt,
+       
+       /* Associations */
+       _Agency
+     }
+     ```
+     
+   8.	Save and activate the object.
+   9.	
  </details>
  
 ## Exercise 1.4 Create CDS projection views
