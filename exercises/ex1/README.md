@@ -61,18 +61,18 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 define table zad164travel_000 {
   key client            : abap.clnt not null;
   key travel_uuid       : sysuuid_x16 not null;
-  travel_id             : zrap200_travel_id not null;
-  agency_id             : zrap200_agency_id not null;
-  customer_id           : zrap200_customer_id not null;
-  begin_date            : /dmo/begin_date;
-  end_date              : /dmo/end_date;
-  @Semantics.amount.currencyCode : 'zrap200_travel_d.currency_code'
-  booking_fee           : /dmo/booking_fee;
-  @Semantics.amount.currencyCode : 'zrap200_travel_d.currency_code'
-  total_price           : /dmo/total_price;
-  currency_code         : zrap200_currency_code;
-  description           : /dmo/description;
-  overall_status        : zrap200_overall_status;
+  travel_id             : zad164_travel_id not null;
+  agency_id             : zad164_agency_id not null;
+  customer_id           : zad164_customer_id not null;
+  begin_date            : zad164_begin_date;
+  end_date              : zad164_end_date;
+  @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+  booking_fee           : zad164_booking_fee;
+  @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+  total_price           : zad164_total_price;
+  currency_code         : zad164_currency_code;
+  description           : zad164_description;
+  overall_status        : zad164_overall_status;
   local_created_by      : abp_creation_user;
   local_created_at      : abp_creation_tstmpl;
   local_last_changed_by : abp_locinst_lastchange_user;
