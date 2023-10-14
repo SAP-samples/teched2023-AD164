@@ -169,7 +169,41 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      ```
      
    8.	Save and activate the object.
-       
+   9.	Define Access Control for the above CDS Root view by right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
+      ![](images/AD164_E1_3_6_0.png)
+  10. Maintain the information provided below and click **Next >**.
+
+   - Name: **`ZAD164_R_TRAVEL_XXX`**
+   - Description: **`Access Control for ZAD164_R_TRAVEL_XXX`** .   
+    ![](images/AD164_E1_3_6.png)
+
+  11. Select your transport request and click **Next**.
+    ![](images/AD164_E1_3_7.png)
+  12. An access control for the CDS projection entity with the following access control definition should get generated
+     ![](images/AD164_E1_3_8.png)
+
+  14. Replace the default source code with following code snippet:
+   
+   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+
+     
+    ```ABAP
+     @EndUserText.label: 'Access Control for ZAD164_R_TRAVEL_XXX'
+     @MappingRole: true
+     define role ZAD164_R_TRAVEL_XXX {
+       grant
+         select
+           on
+             zad164_r_travel_000
+               where
+                 1 = 1;
+                 
+     }
+     
+     ```
+     
+   15.	Save and activate the object.
+      
  </details>
  
 ## Exercise 1.4 Create CDS projection views
@@ -194,7 +228,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
     ![](images/AD164_E1_4_4.png)
 
   5. A CDS projection entity with the following data definition should get generated
-     ![](images/AD164_E1_5_5.png)
+     ![](images/AD164_E1_4_5.png)
      
   7. Replace the default source code with following code snippet:
    
@@ -252,6 +286,40 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      ```
      
    8.	Save and activate the object.
+   9.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
+      ![](images/AD164_E1_4_6_0.png)
+  10. Maintain the information provided below and click **Next >**.
+
+   - Name: **`ZAD164_C_TRAVEL_XXX`**
+   - Description: **`Access Control for ZAD164_C_TRAVEL_XXX`** .   
+    ![](images/AD164_E1_4_6.png)
+
+  11. Select your transport request and click **Next**.
+    ![](images/AD164_E1_4_7.png)
+
+  13. An access control for the CDS projection entity with the following access control definition should get generated
+     ![](images/AD164_E1_4_8.png)
+
+  14. Replace the default source code with following code snippet:
+   
+   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+
+     
+    ```ABAP
+     @EndUserText.label: 'Access Control for ZAD164_C_TRAVEL_000'
+     @MappingRole: true
+     define role ZAD164_C_TRAVEL_000 {
+       grant
+         select
+           on
+             ZAD164_C_TRAVEL_000
+               where
+                 inheriting conditions from entity ZAD164_R_Travel_000;
+     }
+     
+     ```
+     
+   15.	Save and activate the object.
        
  </details>
  
