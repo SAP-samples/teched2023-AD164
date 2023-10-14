@@ -101,25 +101,27 @@ define table zad164travel_000 {
   <summary>Click to expand!</summary>
   
   1.	Right-click on the data base table  **`ZAD164TRAVEL_XXX`** and select **New Data Definition** from the context menu.
-   ![](images/AD164_E1_3_1.png
+     ![](images/AD164_E1_3_1.png)
 
   2. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: **`Data model for Travel App`** .   
-   ![](images/AD164_E1_3_2.png
+   ![](images/AD164_E1_3_2.png)
     
   3.Select your transport request and click **Next**.
-    ![](images/AD164_E1_3_3.png
+    ![](images/AD164_E1_3_3.png)
     
   4. Select **Define Root View Entity** from the list of templates and click on **Finish**
-    ![](images/AD164_E1_3_4.png
+    ![](images/AD164_E1_3_4.png)
 
   5. A CDS entity with the following data definition should get generated
-     ![](images/AD164_E1_3_5.png
+     ![](images/AD164_E1_3_5.png)
      
   7. Replace the default source code with following code snippet:
-
+   
+    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+     
     ```ABAP
      @AccessControl.authorizationCheck: #NOT_REQUIRED
      @EndUserText.label: 'Data model for Travel App'
@@ -159,7 +161,7 @@ define table zad164travel_000 {
      ```
      
    8.	Save and activate the object.
-   9.	
+       
  </details>
  
 ## Exercise 1.4 Create CDS projection views
