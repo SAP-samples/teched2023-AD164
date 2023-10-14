@@ -125,10 +125,12 @@ define table zad164travel_000 {
     ```ABAP
      @AccessControl.authorizationCheck: #NOT_REQUIRED
      @EndUserText.label: 'Data model for Travel App'
-     define root view entity ZAD164_R_TRAVEL_000 
+     define root view entity zad164_r_travel_000 
        as select from zad164travel_000 as travel_000
        
-       association [0..1] to ZAD164_R_AGENCY          as _Agency      on $projection.AgencyId = _Agency.AgencyId
+       association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
+       association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
+       association [1..1] to zad164_r_overall_status_vh  as _OverallStatus  on $projection.OverallStatus = _OverallStatus.OverallStatus
      {
        key travel_uuid as TravelUuid,
        travel_id             as TravelId,
@@ -156,8 +158,12 @@ define table zad164travel_000 {
        last_changed_at       as LastChangedAt,
        
        /* Associations */
-       _Agency
+       _Agency,
+       _Customer,
+       _OverallStatus
+       
      }
+
      ```
      
    8.	Save and activate the object.
