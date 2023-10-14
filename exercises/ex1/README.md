@@ -322,6 +322,102 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      ```
      
    13.	Save and activate the object.
+   14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.
+    ![](images/AD164_E1_4_9.png)
+
+   15. Maintain the information provided below and click **Next >**.
+
+       - Name: **`ZAD164_C_TRAVEL_XXX`**
+       - Description: **`Metadata Extension for ZAD164_C_TRAVEL_XXX`** .   
+    ![](images/AD164_E1_4_10.png)
+
+  10. Select your transport request and click **Finish**.
+    ![](images/AD164_E1_4_11.png)
+
+  11. An metadata extension for the CDS projection entity with the following metadata definition should get generated
+     ![](images/AD164_E1_4_12.png)
+
+  12. Replace the default source code with following code snippet:
+   
+   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+
+     
+    ```ABAP
+     @Metadata.layer: #CORE
+
+     @UI: { headerInfo: { typeName: 'Travel',
+                          typeNamePlural: 'Travels',
+                          title: { type: #STANDARD, value: 'TravelID' } },
+            presentationVariant: [{ sortOrder: [{ by: 'TravelID', direction: #ASC },
+                                                { by: 'BeginDate', direction: #DESC }
+                                               ], 
+                                    visualizations: [{type: #AS_LINEITEM}]  }] }
+     
+     annotate entity zad164_c_travel_000 with
+     {
+       @UI.facet: [{ type: #IDENTIFICATION_REFERENCE }]
+       @UI.hidden: true
+       TravelUuid;
+     
+       @UI: { lineItem:       [{ position: 10 }],
+              identification: [{ position: 10 }],
+              selectionField: [{ position: 10 }]}
+       TravelId;
+     
+       @UI: { lineItem:       [{ position: 20 }],
+              identification: [{ position: 20 }],
+              selectionField: [{ position: 20 }]}
+       @Consumption.valueHelpDefinition: [{ entity : {name: 'zad164_r_agency_std_vh', element: 'AgencyID' }}]
+       AgencyId;
+     
+       @UI: { lineItem:       [{ position: 40 }],
+              identification: [{ position: 40 }],
+              selectionField: [{ position: 40 }]}
+       @Consumption.valueHelpDefinition: [{entity: {name: 'zad164_r_customer_stdvh', element: 'CustomerID' }}]
+       CustomerId;
+     
+       @UI: { lineItem:       [{ position: 50 }],
+              identification: [{ position: 50 }]}
+       BeginDate;
+     
+       @UI: { lineItem:       [{ position: 60 }],
+              identification: [{ position: 60 }]}
+       EndDate;
+     
+       @UI: { lineItem:       [{ position: 70 }],
+              identification: [{ position: 70 }]}
+       BookingFee;
+     
+       @UI: { lineItem:       [{ position: 80 }],
+              identification: [{ position: 80 }]}
+       TotalPrice;
+     
+       @Consumption.valueHelpDefinition: [{entity: {name: 'I_CurrencyStdVH', element: 'Currency' }}]
+       CurrencyCode;
+     
+       @UI: { lineItem:       [{ position: 90 }],
+              identification: [{ position: 90 }]}
+       Description;
+     
+       @UI: { lineItem:       [{ position: 100 },
+                               { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel', position: 10 },
+                               { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel', position: 20 }],
+              identification: [{ position: 100 }],
+              selectionField: [{ position: 100 }],
+              textArrangement: #TEXT_ONLY }
+       @Consumption.valueHelpDefinition: [{ entity: {name: 'zad164_r_overall_status_vh', element: 'OverallStatus' }}]
+       OverallStatus;
+     
+       @UI.hidden: true
+       OverallStatusText;
+     
+       @UI.hidden: true
+       LocalLastChangedAt;
+     
+     }
+     ```
+     
+   13.	Save and activate the object.
        
  </details>
  
