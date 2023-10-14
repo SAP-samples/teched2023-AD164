@@ -1,4 +1,3 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD164)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD164)
 
 # AD164 - Introduction of ABAP Cloud to classic ABAP developers
 
