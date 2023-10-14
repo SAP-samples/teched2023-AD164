@@ -40,7 +40,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
 <details>
   <summary>Click to expand!</summary>
  
-Create a database table![table](images/adt_tabl.png) to store the _TravelBooking_ data.   
+Create a database table ![table](images/adt_tabl.png) to store the _TravelBooking_ data.   
 A TravelBooking entity defines general data, such as the agency, customer, begin and end date of the travel, total price with the currency, description of the travel and overall status denoting the approval status 
 
    1. Right-click on your ABAP package **`ZAD164_TRAVEL_###`** and select **New** > **Other ABAP Repository Object** from the context menu.
@@ -55,7 +55,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    
    5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
  
-      > **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="table" width="30px"> appearing in the upper-right corner to copy it. 
+      > **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon ![](images/CopyRawContents.png) appearing in the upper-right corner to copy it. 
       
 <pre lang="ABAP">
 @EndUserText.label : 'Persistence for Travel Booking 000'
