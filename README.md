@@ -43,7 +43,7 @@ Your application will look like this:
 
  The figure below illustrates the high-level architecture components of the ABAP RESTful Application Programming Model (RAP). It shows the main technologies and artefacts needed to build an SAP Fiori app or a Web API with RAP from a design time perspective.  
  
- ![architecture](ex0/images/rap_bigpicture.png)
+ ![architecture](ex0/images/RAP_bigpicture.png)
  
  You can find a more information on the various RAP concepts on the SAP Help Portal.
 
