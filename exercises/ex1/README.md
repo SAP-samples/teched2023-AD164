@@ -55,7 +55,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    
    5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
  
-      > **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="../../images/copyrawcontents.png" alt="table" width="30px"> appearing in the upper-right corner to copy it. 
+      > **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="table" width="30px"> appearing in the upper-right corner to copy it. 
       
 <pre lang="ABAP">
 @EndUserText.label : 'Persistence for Travel Booking 000'
