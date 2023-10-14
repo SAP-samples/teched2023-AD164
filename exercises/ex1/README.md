@@ -88,7 +88,7 @@ define table zad164travel_000 {
 }
 </pre>
        
-   6. Save ![save icon](../../images/adt_save.png) and activate ![activate icon](../../images/adt_activate.png) the changes.
+   6. Save ![save icon](images/adt_save.png) and activate ![activate icon](images/adt_activate.png) the changes.
 </details>
 
 ## Exercise 1.3 Create CDS data model
