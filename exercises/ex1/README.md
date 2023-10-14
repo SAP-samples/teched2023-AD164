@@ -603,14 +603,11 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
     ![](images/AD164_E1_8_6.png)
    
  </details>
-    
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
 
 
 ## Summary
 
-You've now ...
+You now have a oData V4 UI service that is ready for consumption as a Fiori App. Building a suitable SAP Fiori app via SAP Business Application Studio and deploying to the system is outside the scope of this HandsOn exercise.
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
