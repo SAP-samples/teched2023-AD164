@@ -600,7 +600,53 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 7. Click on **Fiori elements App Preview** to preview your application in the browser.
     ![](images/AD164_E1_8_6.png)
+ </details>
+ 
+## Exercise 1.9 Generate Test data and Test using Fiori Elements Preview
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+  This exercise will fill the relevant table with travel booking data.
+  Perform the following steps
+  1. Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context men
+ 
+   ![](images/AD164_E1_9_1.png)
    
+  2. Maintain the following details and click on **Next**
+       Name : **ZAD164_CL_FL_TRVL_DT_GEN_XXX**
+       Description: **Flight Travel Data Generator XXX*
+  
+   ![](images/AD164_E1_9_2.png)
+   
+  3. Select your transport request and press **Finish**. 
+    ![](images/AD164_E1_9_3.png)
+  4. Replace the generated code in the global class with the following code
+     ```ABAP
+       CLASS zad164_cl_fl_trvl_dt_gen_XXX DEFINITION
+          PUBLIC
+          FINAL
+          CREATE PUBLIC .
+        
+          PUBLIC SECTION.
+           INTERFACES: if_oo_adt_classrun.
+          PROTECTED SECTION.
+          PRIVATE SECTION.
+       ENDCLASS.
+       CLASS zad164_cl_fl_trvl_dt_gen_XXX IMPLEMENTATION.
+         METHOD if_oo_adt_classrun~main.
+       
+           SELECT * FROM zad164travel INTO TABLE @DATA(travel_data).
+           DELETE FROM zad164travel_XXX.
+           INSERT zad164travel_xxx FROM TABLE @travel_data.
+           out->write( 'Travel data generation completed' ) ##NO_TEXT.
+         ENDMETHOD.
+        ENDCLASS.
+     ```
+  6. Save and activate the object.
+  7. Execute the class as an ABAP Console Application using the F9 key.
+  8. Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
+     Double click on the **Preview** button to test the fiori elements preview with the generated data
  </details>
 
 
