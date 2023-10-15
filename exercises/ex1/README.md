@@ -462,9 +462,6 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        
          field ( readonly, numbering : managed ) TravelUUID;
        
-         action acceptTravel result [1] $self;
-         action rejectTravel result [1] $self;
-       
          mapping for zad164travel_000
            {
              TravelUUID         = travel_uuid;
@@ -497,14 +494,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    ![](images/AD164_E1_5_6.png)
 
  9. Select your transport request and click **Finish**.
-   ![](images/AD164_E1_5_6.png)
+   ![](images/AD164_E1_5_7.png)
     
 10.	A behavior implemenation class for the behavior definition with the following details should get generated
-   ![](images/AD164_E1_5_7.png)
+   ![](images/AD164_E1_5_8.png)
 
 11. Save and activate the object.
-12. A behavior implementation class with the following code should get generated
-    ![](images/AD164_E1_5_8.png)
    
  </details>
  
