@@ -348,12 +348,11 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      @UI: { headerInfo: { typeName: 'Travel',
                           typeNamePlural: 'Travels',
                           title: { type: #STANDARD, value: 'TravelID' } },
-            presentationVariant: [{ sortOrder: [{ by: 'TravelID', direction: #ASC },
-                                                { by: 'BeginDate', direction: #DESC }
+            presentationVariant: [{ sortOrder: [{ by: 'BeginDate', direction: #DESC }
                                                ], 
                                     visualizations: [{type: #AS_LINEITEM}]  }] }
      
-     annotate entity zad164_c_travel_000 with
+     annotate entity zad164_c_travel_XXX with
      {
        @UI.facet: [{ type: #IDENTIFICATION_REFERENCE }]
        @UI.hidden: true
