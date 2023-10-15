@@ -313,4 +313,4 @@ The entity should now look like this
 
 You've now enriched our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, use developer extensibility to add agency ratings to the data model and also provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
 
-Continue to - [Exercise 3 - Demo Topics](../ex3/README.md)
+Continue to - [Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](../../README.md)
