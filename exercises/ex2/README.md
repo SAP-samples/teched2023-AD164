@@ -307,10 +307,10 @@ The entity should now look like this
     Note that the Agency Review will be available as a Rating indicator on the list view as shown below
  
   <br>![](images/AD164_E2_3_4.png)
-8. To understand other controls that can be used in the fiori app, go through the ![Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
+8. To understand other controls that can be used in the fiori app, go through the [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
    
 ## Summary
 
-You've now ...
+You've now enriched our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, use developer extensibility to add agency ratings to the data model and also provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
