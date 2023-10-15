@@ -51,13 +51,24 @@ After completing this exercise, you will have enabled the Travel booking approva
     
 2. Save and active the behavior definition
 3.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
-<br>![](images/AD164_E2_1_1.png)
+<br>![](images/AD164_E2_1_2.png)
 4. Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
-<br>![](images/AD164_E2_1_1.png)
-5. Save and active the behavior implementation class.
-6. Implement action ACCEPT.
-7. Implement action REJECT.
-8. 
+<br>![](images/AD164_E2_1_3.png)
+5. Save and activate the behavior implementation class.
+6. Implement action ACCEPT, save and activate the behavior implementation class.
+<br>![](images/AD164_E2_1_4.png)
+8. Implement action REJECT, save and activate the behavior implementation class.
+<br>![](images/AD164_E2_1_5.png)
+10. Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+    Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, resepctive status will be set against
+ List should look like this before selecting a record
+ <br>![](images/AD164_E2_1_6.png)
+
+ List should look like this after selecting a record
+ <br>![](images/AD164_E2_1_7.png)
+ After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
+ <br>![](images/AD164_E2_1_8.png)
+ 
 ## Exercise 2.2 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
