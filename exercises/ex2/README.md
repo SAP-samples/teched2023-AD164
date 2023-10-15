@@ -4,7 +4,56 @@ In this exercise, we enrich our travel booking data model with transactional cap
 
 ## Exercise 2.1 Enable Read Only UI service with custom actions
 After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
+1.	Open the behavior definition for view **ZAD164_R_TRAVEL_XXX** from the project explorer and add two custom actions APPROVE and REJECT.
+   The behvior definition should look like this after defining the custom actions
+  	<br>![](images/AD164_E2_1_1.png)
+  	```abap
+    managed implementation in class zbp_ad164_r_travel_000 unique;
+    strict ( 2 );
+    
+    define behavior for zad164_r_travel_000 alias zad164_travel_000
+    persistent table zad164travel_000
+    lock master
+    authorization master ( global )
+    etag master LocalLastChangedAt
+    {
+    //  create;
+    //  update;
+    //  delete;
+    
+    //  internal update;
+    
+      field ( readonly, numbering : managed ) TravelUUID;
+    
+      action acceptTravel result [1] $self;
+      action rejectTravel result [1] $self;
+    
+      mapping for zad164travel_000
+        {
+          TravelUUID         = travel_uuid;
+          TravelID           = travel_id;
+          AgencyID           = agency_id;
+          CustomerID         = customer_id;
+          BeginDate          = begin_date;
+          EndDate            = end_date;
+          BookingFee         = booking_fee;
+          TotalPrice         = total_price;
+          CurrencyCode       = currency_code;
+          Description        = description;
+          OverallStatus      = overall_status;
+          LastChangedAt      = last_changed_at;
+          LocalCreatedAt     = local_created_at;
+          LocalCreatedBy     = local_created_by;
+          LocalLastChangedAt = local_last_changed_at;
+          LocalLastChangedBy = local_last_changed_by;
+        }
+    }
+  ``
+  
+3. Save and active the behavior definition
+4.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
 
+   
 ## Exercise 2.2 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
