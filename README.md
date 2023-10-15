@@ -81,10 +81,10 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 2.2 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-22-sub-exercise-2-description)
     - [Exercise 2.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-22-sub-exercise-2-description)
       
-- [Exercise 3 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2/)
-    - [Exercise 3.1 - Enable Read Only UI service with custom actions](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 3.2 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - [Exercise 3.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 3 - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](exercises/ex3/)
+    - [Exercise 3.1 - Demo Only - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 3.2 - Demo Only - Generate RAP artefacts using ABAP Repository Object Generator in ADT](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 3.3 - Demo Only - Consume existing WRICEF Objects in new ABAP Cloud ](exercises/ex2#exercise-22-sub-exercise-2-description)
     - 
 ## How to obtain support
 [^Top of page](#)
