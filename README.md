@@ -64,7 +64,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
 [^Top of page](#)
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - Create Your Own Transaction UI Service](exercises/ex1/)
+- [Exercise 1 - Create Your Own Read Only UI Service](exercises/ex1/)
     - [Exercise 1.1 - Create ABAP Package](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Create Database Table](exercises/ex1#exercise-12-sub-exercise-2-description)
     - [Exercise 1.3 - Create CDS data model](exercises/ex1#exercise-13-sub-exercise-3-description)
@@ -76,7 +76,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 1.9 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1#exercise-19-sub-exercise-9-description)
 
 
-- [Exercise 2 - Enhance the app with Agency ratings](exercises/ex2/)
+- [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and Feature from Fiori feature showcase](exercises/ex2/)
     - [Exercise 2.1 - Use Extended BO for Agency Review Ratings in the current data model](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Test](exercises/ex2#exercise-22-sub-exercise-2-description)
 
