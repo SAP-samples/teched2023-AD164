@@ -76,10 +76,16 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 1.9 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1#exercise-19-sub-exercise-9-description)
 
 
-- [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and Feature from Fiori feature showcase](exercises/ex2/)
-    - [Exercise 2.1 - Use Extended BO for Agency Review Ratings in the current data model](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Test](exercises/ex2#exercise-22-sub-exercise-2-description)
-
+- [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2/)
+    - [Exercise 2.1 - Enable Read Only UI service with custom actions](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.2 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-22-sub-exercise-2-description)
+      
+- [Exercise 3 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2/)
+    - [Exercise 3.1 - Enable Read Only UI service with custom actions](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 3.2 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 3.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - 
 ## How to obtain support
 [^Top of page](#)
 
@@ -94,6 +100,7 @@ You can find further information on the different topics here:
 - [New ABAP Platform Extensibility Options for SAP S/4HANA](https://blogs.sap.com/2021/11/19/new-abap-platform-extensibility-options-in-2021/)
 - [Getting Started with the ABAP RESTful Application Programming Model (RAP)](https://blogs.sap.com/2019/10/25/getting-started-with-the-abap-restful-programming-model/)
 - [ABAP Extensibility Topic Page @SAP Community](https://community.sap.com/topics/abap-extensibility)
+- [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide)
 
 
 ## License
