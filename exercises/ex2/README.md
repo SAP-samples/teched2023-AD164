@@ -77,7 +77,7 @@ Showcase the following
  - Extend View defintion on Agency Entity : ZAD164_R_AGENCY_EXTEND
  - View which is accessed as an extnesion : ZAD164_R_AGENCY_REVIEW
 
-## Exercise 2.3 Consume the data from extended view
+## Exercise 2.3 Consume the data from extended view and Test using Fiori Elements Preview
 
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
@@ -313,4 +313,4 @@ The entity should now look like this
 
 You've now enriched our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, use developer extensibility to add agency ratings to the data model and also provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Demo Topics](../ex3/README.md)
