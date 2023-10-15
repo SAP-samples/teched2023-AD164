@@ -47,13 +47,17 @@ After completing this exercise, you will have enabled the Travel booking approva
           LocalLastChangedAt = local_last_changed_at;
           LocalLastChangedBy = local_last_changed_by;
         }
-    }
-  ``
-  
-3. Save and active the behavior definition
-4.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
-
-   
+    } ```
+    
+2. Save and active the behavior definition
+3.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
+<br>![](images/AD164_E2_1_1.png)
+4. Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
+<br>![](images/AD164_E2_1_1.png)
+5. Save and active the behavior implementation class.
+6. Implement action ACCEPT.
+7. Implement action REJECT.
+8. 
 ## Exercise 2.2 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
