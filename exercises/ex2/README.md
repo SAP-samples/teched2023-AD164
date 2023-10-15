@@ -84,12 +84,12 @@ After completing these steps you will have included a new field for average rati
 1.	Open the data definition for view **ZAD164_R_TRAVEL_000** from the project explorer and add a new association to **ZAD164_R_AGENCY_REVIEW** and compute the average rating for the agency from the data from association.
    NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
-<br>![](images/AD164_E2_1_1.png)
+<br>![](images/AD164_E2_3_1.png)
 ```abap
     @AccessControl.authorizationCheck: #NOT_REQUIRED
     @EndUserText.label: 'Data model for Travel App'
-    define root view entity zad164_r_travel_000 
-      as select from zad164travel_000 as travel_000
+    define root view entity zad164_r_travel_XXX 
+      as select from zad164travel_000 as travel_XXX
       
       association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
       association [0..*] to zad164_r_agency_review      as _AgencyReview   on $projection.AgencyId = _AgencyReview.AgencyId
@@ -149,10 +149,166 @@ The entity should now look like this
       local_last_changed_at,
       last_changed_at
 ```
+2. Save and activate the CDS entity
+3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the cds entity **ZAD164_R_TRAVEL_XXX**.
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+The entity should now look like this
+<br>![](images/AD164_E2_3_2.png)
+```abap
+      @EndUserText.label: 'Travel Projection View'
+      @AccessControl.authorizationCheck: #CHECK
+      
+      @Metadata.allowExtensions: true
+      @Search.searchable: true
+      define root view entity zad164_c_travel_000 
+        provider contract transactional_query
+        as projection on zad164_r_travel_000
+      {
+        key TravelUuid,
+            
+            @Search.defaultSearchElement: true
+            TravelId,
+      
+            @Search.defaultSearchElement: true
+            @ObjectModel.text.element: ['AgencyName']
+            AgencyId,
+            _Agency.Name              as AgencyName,
+            AgencyRating,
+      
+            @Search.defaultSearchElement: true
+            @ObjectModel.text.element: ['CustomerName']
+            CustomerId,
+            _Customer.LastName        as CustomerName,
+      
+            BeginDate,
+            EndDate,
+      
+            BookingFee,
+            TotalPrice,
+            CurrencyCode,
+      
+            Description,
+      
+            @ObjectModel.text.element: ['OverallStatusText']
+            OverallStatus,
+            _OverallStatus._Text.Text as OverallStatusText : localized,
+      
+            LocalLastChangedAt,
+      
+            _Agency,
+            _AgencyReview,
+            _Currency,
+            _Customer,
+            _OverallStatus
+      }   
+```
+4. Save and activate the CDS entity
+5. Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
+ 
+The entity should now look like this
+<br>![](images/AD164_E2_3_3.png)
+```abap
+      @Metadata.layer: #CORE
 
+      @UI: { headerInfo: { typeName: 'Travel',
+                           typeNamePlural: 'Travels',
+                           title: { type: #STANDARD, value: 'TravelID' } },
+             presentationVariant: [{ sortOrder: [{ by: 'BeginDate', direction: #DESC }
+                                                ], 
+                                     visualizations: [{type: #AS_LINEITEM}]  }] }
+      
+      annotate entity zad164_c_travel_000 with
+      {
+        @UI.facet: [{ type: #IDENTIFICATION_REFERENCE }]
+        @UI.hidden: true
+        TravelUuid;
+      
+        @UI: { lineItem:       [{ position: 10 }],
+               identification: [{ position: 10 }],
+               selectionField: [{ position: 10 }]}
+        TravelId;
+      
+        @UI: { lineItem:       [{ position: 20 }],
+               identification: [{ position: 20 }],
+               selectionField: [{ position: 20 }]}
+        @Consumption.valueHelpDefinition: [{ entity : {name: 'zad164_r_agency_std_vh', element: 'AgencyId' }}]
+        AgencyId;
+        
+        @UI: { 
+        dataPoint: {
+          qualifier: 'AgencyRating',
+          targetValue: 5,
+          visualization: #RATING,
+          title: 'Agency Rating Indicator'
+        },
+        lineItem: [
+          {
+            type: #AS_DATAPOINT,
+            label: 'Agency Rating Indicator',
+            importance: #HIGH,
+            position: 30
+          }
+        ],
+        identification: [{ type: #AS_DATAPOINT,
+                           label : 'Agency Rating Indicator',
+                           importance: #HIGH,
+                           position: 30 }]
+        }
+        AgencyRating;
+      
+        @UI: { lineItem:       [{ position: 40 }],
+               identification: [{ position: 40 }],
+               selectionField: [{ position: 40 }]}
+        @Consumption.valueHelpDefinition: [{entity: {name: 'zad164_r_customer_stdvh', element: 'CustomerID' }}]
+        CustomerId;
+      
+        @UI: { lineItem:       [{ position: 50 }],
+               identification: [{ position: 50 }]}
+        BeginDate;
+      
+        @UI: { lineItem:       [{ position: 60 }],
+               identification: [{ position: 60 }]}
+        EndDate;
+      
+        @UI: { lineItem:       [{ position: 70 }],
+               identification: [{ position: 70 }]}
+        BookingFee;
+      
+        @UI: { lineItem:       [{ position: 80 }],
+               identification: [{ position: 80 }]}
+        TotalPrice;
+      
+        @Consumption.valueHelpDefinition: [{entity: {name: 'I_CurrencyStdVH', element: 'Currency' }}]
+        CurrencyCode;
+      
+        @UI: { lineItem:       [{ position: 90 }],
+               identification: [{ position: 90 }]}
+        Description;
+      
+        @UI: { lineItem:       [{ position: 100 },
+                                { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel', position: 10 },
+                                { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel', position: 20 }],
+               identification: [{ position: 100 }],
+               selectionField: [{ position: 100 }],
+               textArrangement: #TEXT_ONLY }
+        @Consumption.valueHelpDefinition: [{ entity: {name: 'zad164_r_overall_status_vh', element: 'OverallStatus' }}]
+        OverallStatus;
+      
+        @UI.hidden: true
+        OverallStatusText;
+      
+        @UI.hidden: true
+        LocalLastChangedAt;
+      
+      }
+```
+6. Save and activate the metadata extension of the projection CDS entity
+7. Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+    Note that the Agency Review will be available as a Rating indicator on the list view as shown below
+ 
+  <br>![](images/AD164_E2_3_4.png)
+
+   
 ## Summary
 
 You've now ...
