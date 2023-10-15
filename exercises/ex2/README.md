@@ -153,7 +153,7 @@ The entity should now look like this
 3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the cds entity **ZAD164_R_TRAVEL_XXX**.
 
 The entity should now look like this
-<br>![](images/AD164_E2_3_1_2.png)
+<br>![](images/AD164_E2_3_2.png)
 ```abap
       @EndUserText.label: 'Travel Projection View'
       @AccessControl.authorizationCheck: #CHECK
@@ -206,7 +206,7 @@ The entity should now look like this
 5. Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
  
 The entity should now look like this
-<br>![](images/AD164_E2_3_2.png)
+<br>![](images/AD164_E2_3_3.png)
 ```abap
       @Metadata.layer: #CORE
 
@@ -307,7 +307,7 @@ The entity should now look like this
     Note that the Agency Review will be available as a Rating indicator on the list view as shown below
  
   <br>![](images/AD164_E2_3_4.png)
-
+8. To understand other controls that can be used in the fiori app, go through the ![Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
    
 ## Summary
 
