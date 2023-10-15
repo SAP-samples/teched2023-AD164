@@ -1,8 +1,11 @@
-# Exercise 2 - Enrich UI oData service with Agency Ratings, Fiori feature showcase
+# Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature
 
-In this exercise, we enrich our travel booking data model with agency ratings to provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
+In this exercise, we enrich our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, agency ratings to provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
 
-## Exercise 2.1 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
+## Exercise 2.1 Enable Read Only UI service with custom actions
+After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
+
+## Exercise 2.2 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
 Showcase the following 
@@ -10,7 +13,7 @@ Showcase the following
  - Extend View defintion on Agency Entity : ZAD164_R_AGENCY_EXTEND
  - View which is accessed as an extnesion : ZAD164_R_AGENCY_REVIEW
 
-## Exercise 2.2 Consume the data from extended view
+## Exercise 2.3 Consume the data from extended view
 
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
