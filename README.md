@@ -69,23 +69,23 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 1.2 - Create Database Table](exercises/ex1#exercise-12-sub-exercise-2-description)
     - [Exercise 1.3 - Create CDS data model](exercises/ex1#exercise-13-sub-exercise-3-description)
     - [Exercise 1.4 - Create CDS projection views ](exercises/ex1#exercise-14-sub-exercise-4-description)
-    - [Exercise 1.5 - Create Behavior Defintion for CDS data model](exercises/ex1#exercise-15-sub-exercise-5-description)
-    - [Exercise 1.6 - Create Behavior Defintion for projection views](exercises/ex1#exercise-16-sub-exercise-6-description)
+    - [Exercise 1.5 - Create Behavior Defintion for CDS data model](exercises/ex1#exercise-5-sub-exercise-5-description)
+    - [Exercise 1.6 - Create Behavior Defintion for projection views](exercises/ex1#exercise-6-sub-exercise-6-description)
     - [Exercise 1.7 - Create Your Service Definition](exercises/ex1#exercise-17-sub-exercise-7-description)
-    - [Exercise 1.8 - Create Your Service Binding and Test using Fiori Elements Preview](exercises/ex1#exercise-18-sub-exercise-8-description)
-    - [Exercise 1.9 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1#exercise-19-sub-exercise-9-description)
+    - [Exercise 1.8 - Create Your Service Binding and Test using Fiori Elements Preview](exercises/ex1#exercise-8-sub-exercise-8-description)
+    - [Exercise 1.9 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1#exercise-9-sub-exercise-9-description)
 
 
 - [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2/)
     - [Exercise 2.1 - Enable Read Only UI service with custom actions](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - [Exercise 2.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.3 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-23-sub-exercise-2-description)
       
-- [Exercise 3 - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](exercises/ex3/)
-    - [Exercise 3.1 - Demo Only - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 3.2 - Demo Only - Generate RAP artefacts using ABAP Repository Object Generator in ADT](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - [Exercise 3.3 - Demo Only - Consume existing WRICEF Objects in new ABAP Cloud ](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - 
+- Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud
+    - Demo 1 - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
+    - Demo 2 - Generate RAP artefacts using ABAP Repository Object Generator in ADT
+    - Demo 3 - Consume existing WRICEF Objects in new ABAP Cloud 
+      
 ## How to obtain support
 [^Top of page](#)
 
