@@ -609,6 +609,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   <summary>Click to expand!</summary>
   This exercise will fill the relevant table with travel booking data.
   Perform the following steps
+  
   1. Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context men
  
    ![](images/AD164_E1_9_1.png)
@@ -647,6 +648,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   7. Execute the class as an ABAP Console Application using the F9 key.
   8. Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
      Double click on the **Preview** button to test the fiori elements preview with the generated data
+     ![](images/AD164_E1_9_4.png)
+     
  </details>
 
 
