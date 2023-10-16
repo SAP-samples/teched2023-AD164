@@ -62,6 +62,8 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
 
 ## Exercises
 [^Top of page](#)
+<details>
+ <summary>Click to expand!</summary>
 
 - [Getting Started](exercises/ex0/)
    Demos - Travel Booking Approval App using ALVs
@@ -85,13 +87,19 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 2.4 - Test using Fiori Elements Preview](exercises/ex2#exercise-24-test-using-fiori-elements-preview)
     - [Exercise 2.5 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-25-demo-only---how-to-add-additional-fields-associationscompositions-to-existing-data-models-via-developer-extensibility)
     - [Exercise 2.6 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-26-consume-the-data-from-extended-view-and-test-using-fiori-elements-preview)
+      
+</details>
 
 ## Addtional Demos
+[^Top of page](#)
+<details>
+ <summary>Click to expand!</summary>
    Demos on Usage of ABAP Repository Object Generator, RAP Behavior implementation types, Consumption of WRICEF objects in ABAP Cloud
     - Demo 1 - Generate RAP artefacts using ABAP Repository Object Generator in ADT
     - Demo 2 - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
     - Demo 3 - Consume existing WRICEF Objects in new ABAP Cloud 
-      
+</details>     
+
 ## How to obtain support
 [^Top of page](#)
 
