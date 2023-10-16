@@ -9,7 +9,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
   <summary>Click to expand!</summary>
   
   1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-    ![](images/AD164_E1_5_1.png)
+    ![](images/AD164_E2_1_1.png)
  
   2.	Maintain a description and click **Next >**.
 
@@ -17,13 +17,13 @@ In this exercise, we enrich our travel booking data model with transactional cap
    - Retain **Implementation Tyoe:** as **`Managed`*
    - Click **Next**
      
-     ![](images/AD164_E1_5_2.png)
+     ![](images/AD164_E2_1_2.png)
  
   3.	Select your transport request and click **Finish**.
-     ![](images/AD164_E1_5_3.png)
+     ![](images/AD164_E2_1_3.png)
   	
   4.  A behavior definition for the CDS  entity with the following details should get generated
-     ![](images/AD164_E1_5_4.png)
+     ![](images/AD164_E2_1_4.png)
  
   5.	Replace the default source code with following code snippet:
 
@@ -68,18 +68,18 @@ In this exercise, we enrich our travel booking data model with transactional cap
  
  6.	Save and activate the object.
  7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
-   ![](images/AD164_E1_5_5.png)
+   ![](images/AD164_E2_1_5.png)
  8. Maintain a description and click **Next >**.
 
      - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
      - Click **Next**
-   ![](images/AD164_E1_5_6.png)
+   ![](images/AD164_E2_1_6.png)
 
  9. Select your transport request and click **Finish**.
-   ![](images/AD164_E1_5_7.png)
+   ![](images/AD164_E2_1_7.png)
     
 10.	A behavior implemenation class for the behavior definition with the following details should get generated
-   ![](images/AD164_E1_5_8.png)
+   ![](images/AD164_E2_1_8.png)
 
 11. Save and activate the object.
    
@@ -92,19 +92,19 @@ In this exercise, we enrich our travel booking data model with transactional cap
   <summary>Click to expand!</summary>
   1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
   
-   ![](images/AD164_E1_6_1.png)
+   ![](images/AD164_E2_2_1.png)
   
   2.	Maintain a description and click **Next >**.
 
    - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
    - Click **Next**
       
-   ![](images/AD164_E1_6_2.png)
+   ![](images/AD164_E2_2_2.png)
  
   3.	Select your transport request and click **Finish**.
-   ![](images/AD164_E1_6_3.png)
+   ![](images/AD164_E2_2_3.png)
   4.  A projection behavior definition for the projection CDS entity with the following details should get generated
-   ![](images/AD164_E1_6_4.png)
+   ![](images/AD164_E2_2_4.png)
  
   5.	Replace the default source code with following with code snippet:
 
@@ -133,7 +133,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
 After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
 1.	Open the behavior definition for view **ZAD164_R_TRAVEL_XXX** from the project explorer and add two custom actions APPROVE and REJECT.
    The behvior definition should look like this after defining the custom actions
-  	<br>![](images/AD164_E2_1_1.png)
+  	<br>![](images/AD164_E2_3_1.png)
   	```abap
     managed implementation in class zbp_ad164_r_travel_000 unique;
     strict ( 2 );
@@ -178,41 +178,27 @@ After completing this exercise, you will have enabled the Travel booking approva
     
 2. Save and active the behavior definition
 3.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
-<br>![](images/AD164_E2_1_2.png)
+   <br>![](images/AD164_E2_3_2.png)
 4. Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
-<br>![](images/AD164_E2_1_3.png)
+   <br>![](images/AD164_E2_3_3.png)
 5. Save and activate the behavior implementation class.
 6. Implement action ACCEPT, save and activate the behavior implementation class.
-<br>![](images/AD164_E2_1_4.png)
+   <br>![](images/AD164_E2_3_4.png)
 8. Implement action REJECT, save and activate the behavior implementation class.
-<br>![](images/AD164_E2_1_5.png)
+   <br>![](images/AD164_E2_3_5.png)
 10. Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
     Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, resepctive status will be set against
   List should look like this before selecting a record
-  <br>![](images/AD164_E2_1_6.png)
+   <br>![](images/AD164_E2_3_6.png)
 
   List should look like this after selecting a record
-  <br>![](images/AD164_E2_1_7.png)
+   <br>![](images/AD164_E2_3_7.png)
   After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
-  <br>![](images/AD164_E2_1_8.png)
+   <br>![](images/AD164_E2_3_8.png)
   
 </details>
-
-## Exercise 2.4 Test using Fiori Elements Preview
-[^Top of page](#)
-
- <details>
-  <summary>Click to expand!</summary>
-  1. Open the service binding **`ZAD164_UI_TRAVEL_XXX_O4`**, by double clicking the entry for the service binding in the Project Explorer view. This opens up a service binding editor as show below
-  
-   ![](images/AD164_E1_8_1.png)
-
-2. Click on **Fiori elements App Preview** to preview your application in the browser.
-    ![](images/AD164_E1_8_6.png)
- </details>
-
  
-## Exercise 2.5 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
+## Exercise 2.4 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 [^Top of page](#)
 
  <details>
@@ -225,7 +211,7 @@ Showcase the following
   
  </details>
  
-## Exercise 2.6 Consume the data from extended view and Test using Fiori Elements Preview
+## Exercise 2.5 Consume the data from extended view and Test using Fiori Elements Preview
 [^Top of page](#)
 
  <details>
@@ -235,7 +221,7 @@ After completing these steps you will have included a new field for average rati
 1.	Open the data definition for view **ZAD164_R_TRAVEL_000** from the project explorer and add a new association to **ZAD164_R_AGENCY_REVIEW** and compute the average rating for the agency from the data from association.
    NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
-<br>![](images/AD164_E2_3_1.png)
+<br>![](images/AD164_E2_5_1.png)
 ```abap
     @AccessControl.authorizationCheck: #NOT_REQUIRED
     @EndUserText.label: 'Data model for Travel App'
@@ -304,7 +290,7 @@ The entity should now look like this
 3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the cds entity **ZAD164_R_TRAVEL_XXX**.
 
 The entity should now look like this
-<br>![](images/AD164_E2_3_2.png)
+<br>![](images/AD164_E2_5_2.png)
 ```abap
       @EndUserText.label: 'Travel Projection View'
       @AccessControl.authorizationCheck: #CHECK
@@ -357,7 +343,7 @@ The entity should now look like this
 5. Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
  
 The entity should now look like this
-<br>![](images/AD164_E2_3_3.png)
+<br>![](images/AD164_E2_5_3.png)
 ```abap
       @Metadata.layer: #CORE
 
@@ -457,7 +443,7 @@ The entity should now look like this
 7. Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
     Note that the Agency Review will be available as a Rating indicator on the list view as shown below
  
-  <br>![](images/AD164_E2_3_4.png)
+  <br>![](images/AD164_E2_5_4.png)
 8. To understand other controls that can be used in the fiori app, go through the [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
 
 </details>
