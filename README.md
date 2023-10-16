@@ -27,13 +27,13 @@ We also have demos showcasing -
 We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations we have enriched our data model in the MDE.
 
 Your application will look like this:
- ![Custom business application]( ex0/images/TravelBookingApprovalApp.png )
+ ![Custom business application]( exercises/ex0/images/TravelBookingApprovalApp.png )
  
  - Now, the customer/partner wishes to enhance the existing travel booking approval  application with ratings from the Agency.  When an travel booking is being approved, it is good to see the agency review rating in the list. Using the developer extensibility and underlying datamodels in SAP S/4HANA OnPremise ABAP Environment, custom code can be added to existing business logic of the travel approval BO to fulfill this requirement.
 
  Your application will finally look like this:
 
- ![Custom business application]( ex0/images/TravelBookingApprovalAppWithAgencyRating.png )
+ ![Custom business application]( exercises/ex0/images/TravelBookingApprovalAppWithAgencyRating.png )
  
 </details>
 
@@ -43,7 +43,7 @@ Your application will look like this:
 
  The figure below illustrates the high-level architecture components of the ABAP RESTful Application Programming Model (RAP). It shows the main technologies and artefacts needed to build an SAP Fiori app or a Web API with RAP from a design time perspective.  
  
- ![architecture](ex0/images/RAP_bigpicture.png)
+ ![architecture](exercises/ex0/images/RAP_bigpicture.png)
  
  You can find a more information on the various RAP concepts on the SAP Help Portal.
 
