@@ -125,6 +125,11 @@ In this exercise, we enrich our travel booking data model with transactional cap
  </details>
 
 ## Exercise 2.3 Enable Read Only UI service with custom actions
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+  
 After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
 1.	Open the behavior definition for view **ZAD164_R_TRAVEL_XXX** from the project explorer and add two custom actions APPROVE and REJECT.
    The behvior definition should look like this after defining the custom actions
@@ -190,6 +195,8 @@ After completing this exercise, you will have enabled the Travel booking approva
   <br>![](images/AD164_E2_1_7.png)
   After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
   <br>![](images/AD164_E2_1_8.png)
+  
+</details>
 
 ## Exercise 2.4 Test using Fiori Elements Preview
 [^Top of page](#)
@@ -206,15 +213,23 @@ After completing this exercise, you will have enabled the Travel booking approva
 
  
 ## Exercise 2.5 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
+[^Top of page](#)
 
+ <details>
+  <summary>Click to expand!</summary>
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
 Showcase the following 
  - Current Agency CDS Entity : ZAD164_R_AGENCY
  - Extend View defintion on Agency Entity : ZAD164_R_AGENCY_EXTEND
  - View which is accessed as an extnesion : ZAD164_R_AGENCY_REVIEW
-
+  
+ </details>
+ 
 ## Exercise 2.6 Consume the data from extended view and Test using Fiori Elements Preview
+[^Top of page](#)
 
+ <details>
+  <summary>Click to expand!</summary>
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
 1.	Open the data definition for view **ZAD164_R_TRAVEL_000** from the project explorer and add a new association to **ZAD164_R_AGENCY_REVIEW** and compute the average rating for the agency from the data from association.
@@ -444,9 +459,15 @@ The entity should now look like this
  
   <br>![](images/AD164_E2_3_4.png)
 8. To understand other controls that can be used in the fiori app, go through the [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
-   
-## Summary
 
+</details>
+
+## Summary
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
 You've now enriched our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, use developer extensibility to add agency ratings to the data model and also provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
+ </details>
 
 Continue to - [Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](../../README.md)
