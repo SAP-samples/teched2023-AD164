@@ -85,8 +85,9 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 2.4 - Test using Fiori Elements Preview](exercises/ex2#exercise-24-test-using-fiori-elements-preview)
     - [Exercise 2.5 - Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-25-demo-only---how-to-add-additional-fields-associationscompositions-to-existing-data-models-via-developer-extensibility)
     - [Exercise 2.6 - Consume the data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-26-consume-the-data-from-extended-view-and-test-using-fiori-elements-preview)
-      
-- Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud
+
+
+##- Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud
     - Demo 1 - Generate RAP artefacts using ABAP Repository Object Generator in ADT
     - Demo 2 - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
     - Demo 3 - Consume existing WRICEF Objects in new ABAP Cloud 
