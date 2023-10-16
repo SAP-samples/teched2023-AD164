@@ -420,129 +420,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        
  </details>
  
-## Exercise 1.5 Create Behavior Defintion for CDS data model
-[^Top of page](#)
-
- <details>
-  <summary>Click to expand!</summary>
-  
-  1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-    ![](images/AD164_E1_5_1.png)
- 
-  2.	Maintain a description and click **Next >**.
-
-   - Description: _**`Behavior for Travel App XXX`**_
-   - Retain **Implementation Tyoe:** as **`Managed`*
-   - Click **Next**
-     
-     ![](images/AD164_E1_5_2.png)
- 
-  3.	Select your transport request and click **Finish**.
-     ![](images/AD164_E1_5_3.png)
-  	
-  4.  A behavior definition for the CDS  entity with the following details should get generated
-     ![](images/AD164_E1_5_4.png)
- 
-  5.	Replace the default source code with following code snippet:
-
-      ```ABAP
-       managed implementation in class zbp_ad164_r_travel_XXX unique;
-       strict ( 2 );
-       
-       define behavior for zad164_r_travel_XXX alias zad164_travel_XXX
-       persistent table zad164travel_XXX
-       lock master
-       authorization master ( instance )
-       etag master LocalLastChangedAt
-       {
-       //  create;
-       //  update;
-       //  delete;
-         internal update;
-       
-         field ( readonly, numbering : managed ) TravelUUID;
-       
-         mapping for zad164travel_000
-           {
-             TravelUUID         = travel_uuid;
-             TravelID           = travel_id;
-             AgencyID           = agency_id;
-             CustomerID         = customer_id;
-             BeginDate          = begin_date;
-             EndDate            = end_date;
-             BookingFee         = booking_fee;
-             TotalPrice         = total_price;
-             CurrencyCode       = currency_code;
-             Description        = description;
-             OverallStatus      = overall_status;
-             LastChangedAt      = last_changed_at;
-             LocalCreatedAt     = local_created_at;
-             LocalCreatedBy     = local_created_by;
-             LocalLastChangedAt = local_last_changed_at;
-             LocalLastChangedBy = local_last_changed_by;
-           }
-       }
-       ```
- 
- 6.	Save and activate the object.
- 7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
-   ![](images/AD164_E1_5_5.png)
- 8. Maintain a description and click **Next >**.
-
-     - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
-     - Click **Next**
-   ![](images/AD164_E1_5_6.png)
-
- 9. Select your transport request and click **Finish**.
-   ![](images/AD164_E1_5_7.png)
-    
-10.	A behavior implemenation class for the behavior definition with the following details should get generated
-   ![](images/AD164_E1_5_8.png)
-
-11. Save and activate the object.
-   
- </details>
- 
-## Exercise 1.6 Create Behavior Defintion for projection views
-[^Top of page](#)
-
- <details>
-  <summary>Click to expand!</summary>
-  1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-  
-   ![](images/AD164_E1_6_1.png)
-  
-  2.	Maintain a description and click **Next >**.
-
-   - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
-   - Click **Next**
-      
-   ![](images/AD164_E1_6_2.png)
- 
-  3.	Select your transport request and click **Finish**.
-   ![](images/AD164_E1_6_3.png)
-  4.  A projection behavior definition for the projection CDS entity with the following details should get generated
-   ![](images/AD164_E1_6_4.png)
- 
-  5.	Replace the default source code with following with code snippet:
-
-    ```ABAP
-     projection;
-     strict ( 2 );
-     
-     define behavior for zad164_c_travel_000 alias zad164_travel_000
-     {
-     
-       use action acceptTravel;
-       use action rejectTravel;
-     }
-     ```
- 
-   6.	Save and activate the object.
-
- </details>
- 
-## Exercise 1.7 Create Your Service Definition
+## Exercise 1.5 Create Your Service Definition
 [^Top of page](#)
 
  <details>
@@ -570,7 +448,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
       
  </details>
  
-## Exercise 1.8 Create Your Service Binding and Test using Fiori Elements Preview
+## Exercise 1.6 Create Your Service Binding and Test using Fiori Elements Preview
 [^Top of page](#)
 
  <details>
@@ -597,7 +475,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
     ![](images/AD164_E1_8_6.png)
  </details>
  
-## Exercise 1.9 Generate Test data and Test using Fiori Elements Preview
+## Exercise 1.7 Generate Test data and Test using Fiori Elements Preview
 [^Top of page](#)
 
  <details>
@@ -650,7 +528,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 ## Summary
 
-You now have a oData V4 UI service that is ready for consumption in a Fiori App. Building a suitable SAP Fiori app via SAP Business Application Studio and deploying to the system is outside the scope of this HandsOn exercise.
+You now have a oData V4 UI service that is ready for consumption in a Read Only Fiori App. Building a suitable SAP Fiori app via SAP Business Application Studio and deploying to the system is outside the scope of this HandsOn exercise.
 
 Continue to - [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](../ex2/README.md)
 
