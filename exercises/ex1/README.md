@@ -427,22 +427,22 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   <summary>Click to expand!</summary>
      
    1. Right click on projection view **`ZAD164_C_TRAVEL_XXX`** and select create **New Service Definition** from the context menu.
-      ![](images/AD164_E1_7_1.png)
+      ![](images/AD164_E1_5_1.png)
      
    2. Maintain the information provided below and click **Next >**
     - Name: **`ZAD164_SD_TRAVEL_XXX`**
     - Description: **Service Definition for Travel App XXX**
       
-      ![](images/AD164_E1_7_2.png)
+      ![](images/AD164_E1_5_2.png)
 
    4. Select your transport request and press **Finish**. 
 
-      ![](images/AD164_E1_7_3.png)
+      ![](images/AD164_E1_5_3.png)
    5. A service definition for the projection CDS entity with the following details should get generated
-      ![](images/AD164_E1_7_4.png)
+      ![](images/AD164_E1_5_4.png)
 
    6. Provide an alias name as `Travel` for the cds projection view that is being exposed. The service definition should now look like this
-      ![](images/AD164_E1_7_5.png)
+      ![](images/AD164_E1_5_5.png)
 
    7. Save and activate the object.
       
@@ -455,24 +455,24 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   <summary>Click to expand!</summary>
   1. Right-click on your service definition **`ZAD164_SD_TRAVEL_000`** and select **New Service Binding** from the context menu.
   
-   ![](images/AD164_E1_8_1.png)
+   ![](images/AD164_E1_6_1.png)
 
 2. Maintain the information provided below and click **Next**. 
     - Name: **`ZAD164_UI_TRAVEL_000_O4`**
     - Description: _**`OData V4 UI service for Travel App 000`**_
     - Binding Type: **`OData version V4 UI`**
 
-    ![](images/AD164_E1_8_2.png)
+    ![](images/AD164_E1_6_2.png)
 
 3. Select your transport request and press **Finish**.
-    ![](images/AD164_E1_8_3.png)
+    ![](images/AD164_E1_6_3.png)
 4. A service binding for the service definition is created and the created artefact looks like this
-    ![](images/AD164_E1_8_4.png)
+    ![](images/AD164_E1_6_4.png)
 6. Activate and publish your service binding.
-    ![](images/AD164_E1_8_5.png)
+    ![](images/AD164_E1_6_5.png)
 
 7. Click on **Fiori elements App Preview** to preview your application in the browser.
-    ![](images/AD164_E1_8_6.png)
+    ![](images/AD164_E1_6_6.png)
  </details>
  
 ## Exercise 1.7 Generate Test data and Test using Fiori Elements Preview
@@ -485,16 +485,16 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   
   1. Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context men
  
-   ![](images/AD164_E1_9_1.png)
+   ![](images/AD164_E1_7_1.png)
    
   2. Maintain the following details and click on **Next**
        Name : **ZAD164_CL_FL_TRVL_DT_GEN_XXX**
        Description: **Flight Travel Data Generator XXX*
   
-   ![](images/AD164_E1_9_2.png)
+   ![](images/AD164_E1_7_2.png)
    
   3. Select your transport request and press **Finish**. 
-    ![](images/AD164_E1_9_3.png)
+    ![](images/AD164_E1_7_3.png)
   4. Replace the generated code in the global class with the following code
      ```ABAP
        CLASS zad164_cl_fl_trvl_dt_gen_XXX DEFINITION
@@ -521,7 +521,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   7. Execute the class as an ABAP Console Application using the F9 key.
   8. Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
      Double click on the **Preview** button to test the fiori elements preview with the generated data
-     ![](images/AD164_E1_9_4.png)
+     ![](images/AD164_E1_7_4.png)
      
  </details>
 
