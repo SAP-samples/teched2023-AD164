@@ -69,13 +69,13 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - Demo 2 - Travel booking approval app using ABAP ALV with IDA
 
 - [Exercise 1 - Create Your Own Read Only UI Service](exercises/ex1/README.md#exercise-1---create-your-own-read-only-ui-service)
-    - [Exercise 1.1 - Create ABAP Package](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Create Database Table](exercises/ex1#exercise-12-sub-exercise-2-description)
-    - [Exercise 1.3 - Create CDS data model](exercises/ex1#exercise-13-sub-exercise-3-description)
-    - [Exercise 1.4 - Create CDS projection views ](exercises/ex1#exercise-14-sub-exercise-4-description)
-    - [Exercise 1.5 - Create Your Service Definition](exercises/ex1#exercise-15-sub-exercise-7-description)
-    - [Exercise 1.6 - Create Your Service Binding and Test using Fiori Elements Preview](exercises/ex1#exercise-16-sub-exercise-6-description)
-    - [Exercise 1.7 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1#exercise-17-sub-exercise-7-description)
+    - [Exercise 1.1 - Create ABAP Package](exercises/ex1/README.md#exercise-11-create-abap-package)
+    - [Exercise 1.2 - Create Database Table](exercises/ex1/README.md#exercise-12-create-database-table)
+    - [Exercise 1.3 - Create CDS data model](exercises/ex1/README.md#exercise-13-create-cds-data-model)
+    - [Exercise 1.4 - Create CDS projection views ](exercises/ex1/README.md#exercise-14-create-cds-projection-views)
+    - [Exercise 1.5 - Create Your Service Definition](exercises/ex1/README.md#exercise-15-create-your-service-definition)
+    - [Exercise 1.6 - Create Your Service Binding and Test using Fiori Elements Preview](exercises/ex1/README.md#exercise-16-create-your-service-binding-and-test-using-fiori-elements-preview)
+    - [Exercise 1.7 - Generate Test data and Test using Fiori Elements Preview](exercises/ex1/README.md#exercise-17-generate-test-data-and-test-using-fiori-elements-preview)
 
 
 - [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2/)
