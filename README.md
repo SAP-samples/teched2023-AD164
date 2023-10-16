@@ -99,9 +99,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
  
    Demos on Usage of ABAP Repository Object Generator, RAP Behavior implementation types, Consumption of WRICEF objects in ABAP Cloud
    - Demo 1 - Generate RAP artefacts using ABAP Repository Object Generator in ADT
-    
    - Demo 2 - Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
-    
    - Demo 3 - Consume existing WRICEF Objects in new ABAP Cloud 
     
 </details>     
