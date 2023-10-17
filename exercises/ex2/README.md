@@ -509,4 +509,3 @@ You've now enriched our travel booking data model with transactional capabilitie
  </details>
 
 Continue to - [Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](../../README.md#addtional-demos)
-
