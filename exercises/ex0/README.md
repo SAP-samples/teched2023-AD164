@@ -13,7 +13,7 @@ Let's start the excercise and see whether everything is ready to go. Please make
 
 2.	Adapt the Web Browser settings in your ADT installation
    	*	In Eclipse, choose the menu bar **Window** > **Preferences**.
-   	*	Enter **'Web Browser'** in the search field.
+   	*	Enter '**Web Browser**' in the search field.
    	*	Activate the radio button Use external web browser.
    	*	Select one of the listed external web browsers that are available, e.g. your Default system web browser (Please make sure that Internet Explorer is NOT selected).
 
