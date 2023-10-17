@@ -51,7 +51,7 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
  <details>
   <summary>Click to expand!</summary>
   
-0.	[OPTIONAL]: Add **ZAD164** to **Favorite Packages** via right-click on the favorite packages and select **Add Package..** from the context menu.
+0.	[OPTIONAL]: Add **ZAD164** to **Favorite Packages** via right-click on the favorite packages and select **Add Package...** from the context menu.
    ![](images/AD164_E1_1_Step0_0.png)
 
   	In the pop up for **Select an ABAP Package**, type ZAD164 as the search term and choose the entry **ZAD164** under the **Matching items:** window and click on **OK**.
@@ -60,7 +60,7 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
 1.	Right-click on the package **ZD164** ( if the Optional step 0 was performed ), Else Right-click on the System **HE4_400_AD164_EN** listed in the project explorer and select **New > ABAP Package** from the context menu. 
    ![](images/AD164_E1_1_Step1.png)
   	
-2.	Maintain the information provided below and click **Next **.  
+2.	Maintain the information provided below and click **Next**.  
    - Name: **`ZAD164_TRAVEL_XXX`**
    - Description: _**`Travel Approval App XXX`**_
    - Check ** `Add to favorite packages` **
