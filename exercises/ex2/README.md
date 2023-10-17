@@ -11,12 +11,12 @@ In this exercise, we enrich our travel booking data model with transactional cap
 1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
    ![](images/AD164_E2_1_1.png)
  
-2.	Maintain a description and click **Next **.
+2.	Maintain a description and click **`Next`**.
    - Description: _**`Behavior for Travel App XXX`**_
-   - Retain **Implementation Type:** as **`Managed`*
+   - Retain **Implementation Type:** as **`Managed`**
   ![](images/AD164_E2_1_2.png)
  
-3.	Select your transport request and click **Finish**.
+3.	Select your transport request and click **`Finish`**.
    ![](images/AD164_E2_1_3.png)
   	
 4.	A behavior definition for the CDS  entity with the following details should get generated
@@ -41,7 +41,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
        
          field ( readonly, numbering : managed ) TravelUUID;
        
-         mapping for zad164travel_000
+         mapping for zad164travel_XXX
            {
              TravelUUID         = travel_uuid;
              TravelID           = travel_id;
@@ -64,13 +64,13 @@ In this exercise, we enrich our travel booking data model with transactional cap
        </pre>
 
 6.	Save and activate the object.
-7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
+7.	Bring up the Quick Assist proposals ( **`Ctrl + Shift + 1`** ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
    ![](images/AD164_E2_1_5.png)
-8.	Maintain a description and click **Next **.
+8.	Maintain a description and click **`Next`**.
    - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
    ![](images/AD164_E2_1_6.png)
 
-9.	Select your transport request and click **Finish**.
+9.	Select your transport request and click **`Finish`**.
    ![](images/AD164_E2_1_7.png)
     
 10.	A behavior implementation class for the behavior definition with the following details should get generated
@@ -89,11 +89,11 @@ In this exercise, we enrich our travel booking data model with transactional cap
 1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
   	![](images/AD164_E2_2_1.png)
   
-2.	Maintain a description and click **Next **.
+2.	Maintain a description and click **`Next`**.
    - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
    ![](images/AD164_E2_2_2.png)
  
-3.	Select your transport request and click **Finish**.
+3.	Select your transport request and click **`Finish`**.
    ![](images/AD164_E2_2_3.png)
 
 4.	A projection behavior definition for the projection CDS entity with the following details should get generated
@@ -105,7 +105,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
      projection;
      strict ( 2 );
      
-     define behavior for zad164_c_travel_000 alias zad164_travel_000
+     define behavior for zad164_c_travel_XXX alias zad164_travel_XXX
      {
      
        use action acceptTravel;
@@ -124,7 +124,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
   <summary>Click to expand!</summary>
   
 After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
-1.	Open the behavior definition for view **ZAD164_R_TRAVEL_XXX** from the project explorer and add two custom actions APPROVE and REJECT.
+1.	Open the behavior definition for view **`ZAD164_R_TRAVEL_XXX`** from the project explorer and add two custom actions APPROVE and REJECT.
    	The behavior definition should look like this after defining the custom actions
   	<br>![](images/AD164_E2_3_1.png)
   	
@@ -172,10 +172,10 @@ After completing this exercise, you will have enabled the Travel booking approva
 </pre>
     
 2.	Save and active the behavior definition
-3.	Use the quick assist to generate the definition for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
+3.	Use the quick assist to generate the definition for the actions defined in our behavior implementation class **`ZBP_AD164_R_TRAVEL_XXX`**
    <br>![](images/AD164_E2_3_2.png)
 
-4.	Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
+4.	Local class include of the behaviour implementation class **`ZBP_AD164_R_TRAVEL_XXX`** should look like this
    <br>![](images/AD164_E2_3_3.png)
 
 5.	Save and activate the behavior implementation class.
@@ -248,9 +248,9 @@ After completing this exercise, you will have enabled the Travel booking approva
 
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
 Showcase the following
- - Current Agency CDS Entity : ZAD164_R_AGENCY
- - Extend View definition on Agency Entity : ZAD164_R_AGENCY_EXTEND
- - View which is accessed as an extension : ZAD164_R_AGENCY_REVIEW
+ - Current Agency CDS Entity : **`ZAD164_R_AGENCY`**
+ - Extend View definition on Agency Entity : **`ZAD164_R_AGENCY_EXTEND`**
+ - View which is accessed as an extension : **`ZAD164_R_AGENCY_REVIEW`**
   
  </details>
  
@@ -261,7 +261,7 @@ Showcase the following
   <summary>Click to expand!</summary>
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
-1.	Open the data definition for view **ZAD164_R_TRAVEL_000** from the project explorer and add a new association to **ZAD164_R_AGENCY_REVIEW** and compute the average rating for the agency from the data from association.
+1.	Open the data definition for view **`ZAD164_R_TRAVEL_000`** from the project explorer and add a new association to **`ZAD164_R_AGENCY_REVIEW`** and compute the average rating for the agency from the data from association.
    	NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
     <br>![](images/AD164_E2_5_1.png)
@@ -270,7 +270,7 @@ The entity should now look like this
     @AccessControl.authorizationCheck: #NOT_REQUIRED
     @EndUserText.label: 'Data model for Travel App'
     define root view entity zad164_r_travel_XXX 
-      as select from zad164travel_000 as travel_XXX
+      as select from zad164travel_XXX as travel_XXX
       
       association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
       association [0..*] to zad164_r_agency_review      as _AgencyReview   on $projection.AgencyId = _AgencyReview.AgencyId
@@ -332,7 +332,7 @@ The entity should now look like this
       </pre>
 
 2.	Save and activate the CDS entity
-3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the CDS entity **ZAD164_R_TRAVEL_XXX**.
+3.	Open the data definition for the consumption view **`ZAD164_C_TRAVEL_XXX`** from the project explorer and add the computed average rating for the agency from the data from the CDS entity **`ZAD164_R_TRAVEL_XXX`**.
 
 The entity should now look like this
     <br>![](images/AD164_E2_5_2.png)
@@ -343,9 +343,9 @@ The entity should now look like this
       
       @Metadata.allowExtensions: true
       @Search.searchable: true
-      define root view entity zad164_c_travel_000 
+      define root view entity zad164_c_travel_XXC 
         provider contract transactional_query
-        as projection on zad164_r_travel_000
+        as projection on zad164_r_travel_XXX
       {
         key TravelUuid,
             
@@ -387,7 +387,7 @@ The entity should now look like this
 </pre>
 
 4.	Save and activate the CDS entity
-5.	Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
+5.	Open the meta data definition for the consumption view **`ZAD164_C_TRAVEL_XXX`** from the project explorer and add the UI annotations for the Agency Rating.
  
    The entity should now look like this
    <br>![](images/AD164_E2_5_3.png)
@@ -489,7 +489,7 @@ The entity should now look like this
 </pre>
 
 6.	Save and activate the metadata extension of the projection CDS entity
-7.	Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+7.	Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **`ZAD164_UI_TRAVEL_XXX_O4`**
     	Note that the Agency Review will be available as a Rating indicator on the list view as shown below
  
   	<br>![](images/AD164_E2_5_4.png)
