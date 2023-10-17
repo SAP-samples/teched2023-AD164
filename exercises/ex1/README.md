@@ -552,7 +552,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    </pre>
 
 5.	Save and activate the object.
-6.	Execute the class as an ABAP Console Application using the F9 key.
+6.	Execute the class as an ABAP Console Application using the **`F9`** key.
 7.	Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
    Double click on the **Preview** button to test the fiori elements preview with the generated data
    ![](images/AD164_E1_7_4.png)
