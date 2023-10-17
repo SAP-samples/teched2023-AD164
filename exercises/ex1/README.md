@@ -24,20 +24,20 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
    
 7.	Enter the following details in the **New ABAP Project Wizard** and click **Next**
 
-   - **System ID** : **HE4**
+   - **System ID** : **`HE4`**
    - **Connection Type** : Choose **Custom Application Server** from the drop down menu
-   - **Application Server** : **s4hana1.tdc.sap.com**
-   - **Instance Number** : **00**
+   - **Application Server** : **`s4hana1.tdc.sap.com`**
+   - **Instance Number** : **`00`**
    - Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
    ![](images/AD164_E1_0_Step4.png)
    
 7.	In following step, enter the details given below and click **Next**
-   - **Client** : **400**
+   - **Client** : **`400`**
    - Enter the user credentials as supplied by the speaker during the session
    ![](images/AD164_E1_0_Step5.png)
    
 8.	In following step, enter the details given below and click **Finish**
-   - **Project Name** : **HE4_400_AD164_EN**
+   - **Project Name** : **`HE4_400_AD164_EN`**
    ![](images/AD164_E1_0_Step6.png)
 
 9.	A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
@@ -54,10 +54,10 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
 0.	[OPTIONAL]: Add **ZAD164** to **Favorite Packages** via right-click on the favorite packages and select **Add Package...** from the context menu.
    ![](images/AD164_E1_1_Step0_0.png)
 
-  	In the pop up for **Select an ABAP Package**, type ZAD164 as the search term and choose the entry **ZAD164** under the **Matching items:** window and click on **OK**.
+  	In the pop up for **Select an ABAP Package**, type **`ZAD164`** as the search term and choose the entry **ZAD164** under the **Matching items:** window and click on **OK**.
    ![](images/AD164_E1_1_Step0_1.png) 
    
-1.	Right-click on the package **ZD164** ( if the Optional step 0 was performed ), Else Right-click on the System **HE4_400_AD164_EN** listed in the project explorer and select **New > ABAP Package** from the context menu. 
+1.	Right-click on the package **ZAD164** ( if the Optional step 0 was performed ), Else Right-click on the System **HE4_400_AD164_EN** listed in the project explorer and select **New > ABAP Package** from the context menu. 
    ![](images/AD164_E1_1_Step1.png)
   	
 2.	Maintain the information provided below and click **Next**.  
@@ -66,11 +66,11 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
    - Check **`Add to favorite packages`**
    - Ensure that **Superpackage:** has value **ZAD164** 
    ![](images/AD164_E1_1_Step2_1.png) 
-3.	Select TR `HE4K917646` from option **Choose from requests in which i am involved** OR choose option **Enter a request number** and  provide a transport request number `HE4K917646`
+3.	Select TR **`HE4K917646`** from option **Choose from requests in which i am involved** OR choose option **Enter a request number** and  provide a transport request number **`HE4K917646`**
    ![](images/AD164_E1_1_Step2_2.png)
    ![](images/AD164_E1_1_Step2_3.png)
 
-Note to Speakers : Tasks for the participants have to be created in the TR HE4K917646 to ensure that option "Choose from requests in which i am involved" is usable by participants.
+Note to Speakers : Tasks for the participants have to be created in the TR **`HE4K917646`** to ensure that option "Choose from requests in which i am involved" is usable by participants.
 
 4.	Click **Finish** to finish creation of the package and add the package to **Favorite Packages** list.
    You should now see your new package in your Project Explorer.
@@ -345,15 +345,15 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
      
    <pre lang="ABAP">
-     @EndUserText.label: 'Access Control for ZAD164_C_TRAVEL_000'
+     @EndUserText.label: 'Access Control for ZAD164_C_TRAVEL_XXX'
      @MappingRole: true
-     define role ZAD164_C_TRAVEL_000 {
+     define role ZAD164_C_TRAVEL_XXX {
        grant
          select
            on
-             ZAD164_C_TRAVEL_000
+             ZAD164_C_TRAVEL_XXX
                where
-                 inheriting conditions from entity ZAD164_R_Travel_000;
+                 inheriting conditions from entity ZAD164_R_Travel_XXX;
      }
      
     </pre>
@@ -474,7 +474,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 4.	A service definition for the projection CDS entity with the following details should get generated
    ![](images/AD164_E1_5_4.png)
 
-5.	Provide an alias name as `Travel_XXX` for the CDS projection view that is being exposed. The service definition should now look like this
+5.	Provide an alias name as **`Travel_XXX`** for the CDS projection view that is being exposed. The service definition should now look like this
    ![](images/AD164_E1_5_5.png)
 
 6.	Save and activate the object.
@@ -503,7 +503,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 5.	Activate the service binding and publish your local service endpoint in the service binding, to see the projection view with its alias name  which was being exposed in the service definition being seen as a service available 
    ![](images/AD164_E1_6_5.png)
 
-6.	Select the service **Travel_XXX** and click on **Fiori elements App Preview** OR double click on the service **TRAVEL_XXX** to preview your application in the browser.
+6.	Select the service **`Travel_XXX`** and click on **Fiori elements App Preview** OR double click on the service **`TRAVEL_XXX`** to preview your application in the browser.
    ![](images/AD164_E1_6_6.png)
   	
  </details>
@@ -520,8 +520,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
  	 ![](images/AD164_E1_7_1.png)
    
 2.	Maintain the following details and click on **Next**
-   - Name : **ZAD164_CL_FL_TRVL_DT_GEN_XXX**
-   - Description: _**Flight Travel Data Generator XXX**_
+   - Name : **`ZAD164_CL_FL_TRVL_DT_GEN_XXX`**
+   - Description: _**`Flight Travel Data Generator XXX`**_
    ![](images/AD164_E1_7_2.png)
    
 3.	Select your transport request and press **Finish**. 
@@ -553,7 +553,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 5.	Save and activate the object.
 6.	Execute the class as an ABAP Console Application using the **`F9`** key.
-7.	Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
+7.	Open the Service Binding **`ZAD164_UI_TRAVEL_000_O4`**
    Double click on the **Preview** button to test the fiori elements preview with the generated data
    ![](images/AD164_E1_7_4.png)
      
