@@ -7,11 +7,11 @@ This repository contains the material for the SAP TechEd 2023 session called AD1
 
 ## Overview
 
-This course uses the well known travel booking reference app to classic ABAPers. During the course of this session, we will go through two demos and then followed by a hands-on providing an experience on how to handcode the same in ABAP Cloud with our well known ABAP Restful Application Programming Model ( RAP ). We will have short overview of the RAP artefacts thats gets generated and will see a Fiori elements preview of the app to check the developed OData UI service. 
+This course uses the well known travel booking reference app for classic ABAPers. During the course of this session, we will go through two demos and then followed by a hands-on providing an experience on how to handcode the same in ABAP Cloud with our well known ABAP Restful Application Programming Model ( RAP ). We will have short overview of the RAP artefacts thats gets generated and will see a Fiori elements preview of the app to check the developed OData UI service. 
 Additionaly, we have a short optional HandsOn exercise to enrich our existing fiori preview and hence our app utilizing ratings from the underlying Agency data model.
 We also have demos showcasing - 
-1. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
-2. Use ABAP Repository Object Generator in ADT to quickly generate RAP artefacts
+1. Use ABAP Repository Object Generator in ADT to quickly generate RAP artefacts
+2. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
 3. Ways to consume existing WRICEF Objects in new ABAP Cloud 
 
 ### Business Scenario 
