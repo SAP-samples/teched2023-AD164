@@ -521,7 +521,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    
 2.	Maintain the following details and click on **Next**
    - Name : **ZAD164_CL_FL_TRVL_DT_GEN_XXX**
-   - Description: _**Flight Travel Data Generator XXX*_
+   - Description: _**Flight Travel Data Generator XXX**_
    ![](images/AD164_E1_7_2.png)
    
 3.	Select your transport request and press **Finish**. 
