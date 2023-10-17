@@ -14,7 +14,6 @@ In this exercise, we enrich our travel booking data model with transactional cap
 2.	Maintain a description and click **Next **.
    - Description: _**`Behavior for Travel App XXX`**_
    - Retain **Implementation Type:** as **`Managed`*
-   - Click **Next**
   ![](images/AD164_E2_1_2.png)
  
 3.	Select your transport request and click **Finish**.
@@ -69,7 +68,6 @@ In this exercise, we enrich our travel booking data model with transactional cap
    ![](images/AD164_E2_1_5.png)
 8.	Maintain a description and click **Next **.
    - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
-   - Click **Next**
    ![](images/AD164_E2_1_6.png)
 
 9.	Select your transport request and click **Finish**.
@@ -93,7 +91,6 @@ In this exercise, we enrich our travel booking data model with transactional cap
   
 2.	Maintain a description and click **Next **.
    - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
-   - Click **Next**
    ![](images/AD164_E2_2_2.png)
  
 3.	Select your transport request and click **Finish**.
