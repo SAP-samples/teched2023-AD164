@@ -364,7 +364,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 15.	Maintain the information provided below and click **Next**.
     - Name: **`ZAD164_C_TRAVEL_XXX`**
-    - Description: _**`Metadata Extension for ZAD164_C_TRAVEL_XXX`** _  
+    - Description: _**`Metadata Extension for ZAD164_C_TRAVEL_XXX`**_ 
     ![](images/AD164_E1_4_10.png)
 
 16.	Select your transport request and click **Finish**.
