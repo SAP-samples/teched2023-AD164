@@ -1,6 +1,6 @@
 # Preparation
 
-In order to participate in this hands-on session, you MUST have installed the latest version of Eclipse and the latest version of the ABAP Development Tools (ADT) in Eclipse. Please check the following two short documents how to do this if you have not already done it:
+In order to participate in this hands-on session, you MUST have installed the latest version of Eclipse and the latest version of the ABAP Development Tools (ADT) in Eclipse. Please check the following two short documents on how to if you have not already done it:
 
 1. Install the ABAP Development Tools (ADT)
 2. Adapt the Web Browser settings in your ADT installation
