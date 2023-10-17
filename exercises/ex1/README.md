@@ -22,27 +22,26 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
        ![](images/AD164_E1_0_Step3.png)
    
 6.	Enter the following details in the **New ABAP Project Wizard** and click **Next**
-	**System ID** : **HE4**
-	**Connection Type** : Choose **Custom Application Server** from the drop down menu
-	**Application Server** : **s4hana1.tdc.sap.com**
-	**Instance Number** : **00**
-	Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
+    - **System ID** : **HE4**
+    - **Connection Type** : Choose **Custom Application Server** from the drop down menu
+    - **Application Server** : **s4hana1.tdc.sap.com**
+    - **Instance Number** : **00**
+    - Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
                     ![](images/AD164_E1_0_Step4.png)
    
 7.	In following step, enter the details given below and click **Next**
-	**Client** : **400*
-	Enter the user credentials as supplied by the speaker during the session
+    - **Client** : **400*
+    - Enter the user credentials as supplied by the speaker during the session
                     ![](images/AD164_E1_0_Step5.png)
    
 8.	In following step, enter the details given below and click **Finish**
-	**Project Name** : **HE4_400_AD164_EN**
+    - **Project Name** : **HE4_400_AD164_EN**
       ![](images/AD164_E1_0_Step6.png)
 
 9.	A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
       ![](images/AD164_E1_0_Step7.png)
    
-</details>   
-![image](https://github.com/SAP-samples/teched2023-AD164/assets/33621897/a4be9cc4-1b6f-4402-bc4a-de705dddc1bd)
+</details>
 
 ## Exercise 1.1 Create an ABAP Package
 [^Top of page](#)
