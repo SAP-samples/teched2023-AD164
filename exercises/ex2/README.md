@@ -264,7 +264,7 @@ After completing these steps you will have included a new field for average rati
 
 1.	Open the data definition for view **`ZAD164_R_TRAVEL_XXX`** from the project explorer and add a new association to **`ZAD164_R_AGENCY_REVIEW`** and compute the average rating for the agency from the data from association.
 
-  	NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
+  	NOTE: While using the avg(... ) function, the CDS entity prompts to use **GROUP BY** clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
     <br>![](images/AD164_E2_5_1.png)
 
