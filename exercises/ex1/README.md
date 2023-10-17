@@ -105,7 +105,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
    5. Replace the default code with the code snippet provided below and replace all occurences of the placeholder **`###`** with your group ID using the **Replace All** function (**Ctrl+F**).    
  
-      **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+      **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
          
   <pre lang="ABAP">
   @EndUserText.label : 'Persistence for Travel Booking XXX'
@@ -152,7 +152,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   2. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
-   - Description: **`Data model for Travel App XXX`** .   
+   - Description: _**`Data model for Travel App XXX`**_ .   
      ![](images/AD164_E1_3_2.png)
     
   3.Select your transport request and click **Next**.
@@ -169,56 +169,57 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
      
     ```ABAP
-     @AccessControl.authorizationCheck: #NOT_REQUIRED
-     @EndUserText.label: 'Data model for Travel App XXX'
-     define root view entity zad164_r_travel_XXX 
-       as select from zad164travel_000 as travel_XXX
+       @AccessControl.authorizationCheck: #NOT_REQUIRED
+       @EndUserText.label: 'Data model for Travel App XXX'
+       define root view entity zad164_r_travel_XXX 
+         as select from zad164travel_000 as travel_XXX
+         
+         association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
+         association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
+         association [1..1] to zad164_r_overall_status_vh  as _OverallStatus  on $projection.OverallStatus = _OverallStatus.OverallStatus
+         association [0..1] to I_Currency                  as _Currency       on $projection.CurrencyCode = _Currency.Currency
+       {
+         key travel_uuid as TravelUuid,
+         travel_id             as TravelId,
+         agency_id             as AgencyId,
+         customer_id           as CustomerId,
+         begin_date            as BeginDate,
+         end_date              as EndDate,
+         @Semantics.amount.currencyCode: 'CurrencyCode'
+         booking_fee           as BookingFee,
+         @Semantics.amount.currencyCode: 'CurrencyCode'
+         total_price           as TotalPrice,
+         currency_code         as CurrencyCode,
+         description           as Description,
+         overall_status        as OverallStatus,
+         @Semantics.user.createdBy: true
+         local_created_by      as LocalCreatedBy,
+         @Semantics.systemDateTime.createdAt: true
+         local_created_at      as LocalCreatedAt,
+         @Semantics.user.lastChangedBy: true
+         local_last_changed_by as LocalLastChangedBy,
+         @Semantics.systemDateTime.localInstanceLastChangedAt: true
+         local_last_changed_at as LocalLastChangedAt,
        
-       association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
-       association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
-       association [1..1] to zad164_r_overall_status_vh  as _OverallStatus  on $projection.OverallStatus = _OverallStatus.OverallStatus
-       association [0..1] to I_Currency                  as _Currency       on $projection.CurrencyCode = _Currency.Currency
-     {
-       key travel_uuid as TravelUuid,
-       travel_id             as TravelId,
-       agency_id             as AgencyId,
-       customer_id           as CustomerId,
-       begin_date            as BeginDate,
-       end_date              as EndDate,
-       @Semantics.amount.currencyCode: 'CurrencyCode'
-       booking_fee           as BookingFee,
-       @Semantics.amount.currencyCode: 'CurrencyCode'
-       total_price           as TotalPrice,
-       currency_code         as CurrencyCode,
-       description           as Description,
-       overall_status        as OverallStatus,
-       @Semantics.user.createdBy: true
-       local_created_by      as LocalCreatedBy,
-       @Semantics.systemDateTime.createdAt: true
-       local_created_at      as LocalCreatedAt,
-       @Semantics.user.lastChangedBy: true
-       local_last_changed_by as LocalLastChangedBy,
-       @Semantics.systemDateTime.localInstanceLastChangedAt: true
-       local_last_changed_at as LocalLastChangedAt,
-     
-       @Semantics.systemDateTime.lastChangedAt: true
-       last_changed_at       as LastChangedAt,
-       
-       /* Associations */
-       _Agency,
-       _Customer,
-       _OverallStatus,
-       _Currency
-       
-     }
+         @Semantics.systemDateTime.lastChangedAt: true
+         last_changed_at       as LastChangedAt,
+         
+         /* Associations */
+         _Agency,
+         _Customer,
+         _OverallStatus,
+         _Currency
+         
+       }
 
      ```
      
    7.	Save and activate the object.
-   8.	Define Access Control for the above CDS Root view by right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
-      ![](images/AD164_E1_3_6_0.png)
+   8.	Define Access Control for the above CDS Root view - Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
+      
+   ![](images/AD164_E1_3_6_0.png)
      	
-   10. Maintain the information provided below and click **Next >**.
+   9. Maintain the information provided below and click **Next >**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: **`Access Control for ZAD164_R_TRAVEL_XXX`** .   
