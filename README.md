@@ -88,7 +88,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
 
 - [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2#exercise-2---enhance-the-read-only-ui-service-with-transactional-capabilities-and-showcase-developer-extensibility-and-fiori-feature)
     - [Exercise 2.1 - Create a Behavior Definition for CDS data model](exercises/ex2#exercise-21-create-behavior-defintion-for-cds-data-model)
-    - [Exercise 2.2 - Create a Projection of the Behavior Definition for projection view](exercises/ex2#exercise-22-create-behavior-defintion-for-projection-views)
+    - [Exercise 2.2 - Create a Projection of the Behavior Definition for projection views](exercises/ex2#exercise-22-create-behavior-defintion-for-projection-views)
     - [Exercise 2.3 - Enable the UI service with custom actions](exercises/ex2#exercise-23-enable-read-only-ui-service-with-custom-actions)
     - [Exercise 2.4 - Test using Fiori Elements Preview](exercises/ex2#exercise-24-test-using-fiori-elements-preview)
     - [Exercise 2.5 - Demo Only - Add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-25-demo-only---how-to-add-additional-fields-associationscompositions-to-existing-data-models-via-developer-extensibility)
@@ -128,4 +128,3 @@ You can find further information on the different topics here:
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
-![image](https://github.com/SAP-samples/teched2023-AD164/assets/33621897/5eaa8a4d-bccc-457f-842c-c500bcea2fe1)
