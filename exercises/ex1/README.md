@@ -168,7 +168,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    
    **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
      
-    ```ABAP
+   <pre lang="ABAP">
        @AccessControl.authorizationCheck: #NOT_REQUIRED
        @EndUserText.label: 'Data model for Travel App XXX'
        define root view entity zad164_r_travel_XXX 
@@ -212,7 +212,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
          
        }
 
-     ```
+    </pre>
      
    7.	Save and activate the object.
    8.	Define Access Control for the above CDS Root view - Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
@@ -233,10 +233,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
   12. Replace the default source code with following code snippet:
    
-   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
      
-    ```ABAP
+   <pre lang="ABAP">
      @EndUserText.label: 'Access Control for ZAD164_R_TRAVEL_XXX'
      @MappingRole: true
      define role ZAD164_R_TRAVEL_XXX {
@@ -247,9 +247,9 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
                where
                  1 = 1;
                  
-     }
+      }
      
-     ```
+    </pre>
      
    13.	Save and activate the object.
       
@@ -281,10 +281,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
   6. Replace the default source code with following code snippet:
    
-   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
      
-    ```ABAP
+   <pre lang="ABAP">
      @EndUserText.label: 'Travel Projection View'
      @AccessControl.authorizationCheck: #CHECK
      
@@ -332,7 +332,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
            _OverallStatus
      }
 
-     ```
+    </pre>
      
    7.	Save and activate the object.
    8.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
@@ -351,10 +351,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
   12. Replace the default source code with following code snippet:
    
-   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
      
-    ```ABAP
+   <pre lang="ABAP">
      @EndUserText.label: 'Access Control for ZAD164_C_TRAVEL_000'
      @MappingRole: true
      define role ZAD164_C_TRAVEL_000 {
@@ -366,7 +366,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
                  inheriting conditions from entity ZAD164_R_Travel_000;
      }
      
-     ```
+    </pre>
      
    13.	Save and activate the object.
    14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.    
@@ -386,10 +386,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
    18. Replace the default source code with following code snippet:
    
-   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
 
      
-    ```ABAP
+   <pre lang="ABAP">
      @Metadata.layer: #CORE
 
      @UI: { headerInfo: { typeName: 'Travel',
@@ -461,7 +461,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        LocalLastChangedAt;
      
      }
-     ```
+   </pre>
      
    19.	Save and activate the object.
        
@@ -543,7 +543,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   3. Select your transport request and press **Finish**. 
     ![](images/AD164_E1_7_3.png)
   4. Replace the generated code in the global class with the following code
-     ```ABAP
+    <pre lang="ABAP">
        CLASS zad164_cl_fl_trvl_dt_gen_XXX DEFINITION
           PUBLIC
           FINAL
@@ -563,7 +563,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
            out->write( 'Travel data generation completed' ) ##NO_TEXT.
          ENDMETHOD.
         ENDCLASS.
-     ```
+   </pre>
   6. Save and activate the object.
   7. Execute the class as an ABAP Console Application using the F9 key.
   8. Open the Service Binding **ZAD164_UI_TRAVEL_000_O4**
