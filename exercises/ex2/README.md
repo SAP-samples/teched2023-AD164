@@ -2,32 +2,30 @@
 
 In this exercise, we enrich our travel booking data model with transactional capabilities - Approve and Reject Custom Actions, agency ratings to provide a sneak preview of using a rating indicator to enrich the UI with additional information about the rating of the agency that has booked the travel for the customer..
 
-## Exercise 2.1 Create Behavior Defintion for CDS data model
+## Exercise 2.1 Create Behavior Definition for CDS data model
 [^Top of page](#)
 
  <details>
-  <summary>Click to expand!</summary>
+ <summary>Click to expand!</summary>
   
-  1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-    ![](images/AD164_E2_1_1.png)
+1.	Right-click your data definition **`ZAD164_R_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
+   ![](images/AD164_E2_1_1.png)
  
-  2.	Maintain a description and click **Next >**.
-
+2.	Maintain a description and click **Next **.
    - Description: _**`Behavior for Travel App XXX`**_
-   - Retain **Implementation Tyoe:** as **`Managed`*
+   - Retain **Implementation Type:** as **`Managed`*
    - Click **Next**
-     
-     ![](images/AD164_E2_1_2.png)
+  ![](images/AD164_E2_1_2.png)
  
-  3.	Select your transport request and click **Finish**.
-     ![](images/AD164_E2_1_3.png)
+3.	Select your transport request and click **Finish**.
+   ![](images/AD164_E2_1_3.png)
   	
-  4.  A behavior definition for the CDS  entity with the following details should get generated
-     ![](images/AD164_E2_1_4.png)
+4.	A behavior definition for the CDS  entity with the following details should get generated
+   ![](images/AD164_E2_1_4.png)
  
-  5.	Replace the default source code with following code snippet:
+5.	Replace the default source code with following code snippet:
 
-      ```ABAP
+      <pre lang="ABAP">
        managed implementation in class zbp_ad164_r_travel_XXX unique;
        strict ( 2 );
        
@@ -64,51 +62,49 @@ In this exercise, we enrich our travel booking data model with transactional cap
              LocalLastChangedBy = local_last_changed_by;
            }
        }
-       ```
- 
- 6.	Save and activate the object.
- 7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
-   ![](images/AD164_E2_1_5.png)
- 8. Maintain a description and click **Next >**.
+       </pre>
 
-     - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
-     - Click **Next**
+6.	Save and activate the object.
+7.	Bring up the Quick Assist proposals ( Ctrl + Shift + 1 ) while hovering over the suggested implementation class name and select the proposal **`Create behavior implementation class zbp..`** to auto generate the behavior implementation class.
+   ![](images/AD164_E2_1_5.png)
+8.	Maintain a description and click **Next **.
+   - Description: _**`Behavior implementation for ZAD164_R_TRAVEL_XXX`**_
+   - Click **Next**
    ![](images/AD164_E2_1_6.png)
 
- 9. Select your transport request and click **Finish**.
+9.	Select your transport request and click **Finish**.
    ![](images/AD164_E2_1_7.png)
     
-10.	A behavior implemenation class for the behavior definition with the following details should get generated
-   ![](images/AD164_E2_1_8.png)
+10.	A behavior implementation class for the behavior definition with the following details should get generated
+    ![](images/AD164_E2_1_8.png)
 
-11. Save and activate the object.
+11.	Save and activate the object.
    
  </details>
  
-## Exercise 2.2 Create Behavior Defintion for projection views
+## Exercise 2.2 Create Behavior Definition for projection views
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
-  1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-  
-   ![](images/AD164_E2_2_1.png)
-  
-  2.	Maintain a description and click **Next >**.
 
+1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
+  	![](images/AD164_E2_2_1.png)
+  
+2.	Maintain a description and click **Next **.
    - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
    - Click **Next**
-      
    ![](images/AD164_E2_2_2.png)
  
-  3.	Select your transport request and click **Finish**.
+3.	Select your transport request and click **Finish**.
    ![](images/AD164_E2_2_3.png)
-  4.  A projection behavior definition for the projection CDS entity with the following details should get generated
-   ![](images/AD164_E2_2_4.png)
- 
-  5.	Replace the default source code with following with code snippet:
 
-    ```ABAP
+4.	A projection behavior definition for the projection CDS entity with the following details should get generated
+  	![](images/AD164_E2_2_4.png)
+ 
+5.	Replace the default source code with following with code snippet:
+
+    <pre lang="ABAP">
      projection;
      strict ( 2 );
      
@@ -118,9 +114,9 @@ In this exercise, we enrich our travel booking data model with transactional cap
        use action acceptTravel;
        use action rejectTravel;
      }
-     ```
+     </pre>
  
-   6.	Save and activate the object.
+6.	Save and activate the object.
 
  </details>
 
@@ -132,14 +128,15 @@ In this exercise, we enrich our travel booking data model with transactional cap
   
 After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
 1.	Open the behavior definition for view **ZAD164_R_TRAVEL_XXX** from the project explorer and add two custom actions APPROVE and REJECT.
-   The behvior definition should look like this after defining the custom actions
+   	The behavior definition should look like this after defining the custom actions
   	<br>![](images/AD164_E2_3_1.png)
-  	```abap
-    managed implementation in class zbp_ad164_r_travel_000 unique;
+  	
+  <pre lang="ABAP">
+    managed implementation in class zbp_ad164_r_travel_XXX unique;
     strict ( 2 );
     
-    define behavior for zad164_r_travel_000 alias zad164_travel_000
-    persistent table zad164travel_000
+    define behavior for zad164_r_travel_XXX alias zad164_travel_XXX
+    persistent table zad164travel_XXX
     lock master
     authorization master ( global )
     etag master LocalLastChangedAt
@@ -155,7 +152,7 @@ After completing this exercise, you will have enabled the Travel booking approva
       action acceptTravel result [1] $self;
       action rejectTravel result [1] $self;
     
-      mapping for zad164travel_000
+      mapping for zad164travel_XXX
         {
           TravelUUID         = travel_uuid;
           TravelID           = travel_id;
@@ -174,40 +171,89 @@ After completing this exercise, you will have enabled the Travel booking approva
           LocalLastChangedAt = local_last_changed_at;
           LocalLastChangedBy = local_last_changed_by;
         }
-    } ```
+    } 
+</pre>
     
-2. Save and active the behavior definition
-3.	Use the quick assist to generate the defintion for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
+2.	Save and active the behavior definition
+3.	Use the quick assist to generate the definition for the actions defined in our behavior implementation class **ZBP_AD164_R_TRAVEL_XXX**
    <br>![](images/AD164_E2_3_2.png)
-4. Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
-   <br>![](images/AD164_E2_3_3.png)
-5. Save and activate the behavior implementation class.
-6. Implement action ACCEPT, save and activate the behavior implementation class.
-   <br>![](images/AD164_E2_3_4.png)
-8. Implement action REJECT, save and activate the behavior implementation class.
-   <br>![](images/AD164_E2_3_5.png)
-10. Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
-    Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, resepctive status will be set against
-  List should look like this before selecting a record
-   <br>![](images/AD164_E2_3_6.png)
 
-  List should look like this after selecting a record
+4.	Local class include of the behaviour implementation class **ZBP_AD164_R_TRAVEL_XXX** should look like this
+   <br>![](images/AD164_E2_3_3.png)
+
+5.	Save and activate the behavior implementation class.
+6.	Implement action ACCEPT, save and activate the behavior implementation class.
+   
+<pre lang="ABAP">
+   "Modify travel instance
+    MODIFY ENTITIES OF zad164_r_travel_XXX IN LOCAL MODE
+      ENTITY zad164_travel_XXX
+        UPDATE FIELDS ( OverallStatus )
+        WITH VALUE #( FOR key IN keys ( %tky          = key-%tky
+                                        OverallStatus = travel_status-accepted ) )
+      FAILED failed.
+
+    "Read changed data for action result
+    READ ENTITIES OF zad164_r_travel_XXX IN LOCAL MODE
+      ENTITY zad164_travel_XXX
+        ALL FIELDS WITH
+        CORRESPONDING #( keys )
+      RESULT DATA(travels).
+
+    result = VALUE #( FOR travel IN travels ( %tky   = travel-%tky
+                                              %param = travel ) ).
+</pre>
+
+   <br>![](images/AD164_E2_3_4.png)
+
+7.	Implement action REJECT, save and activate the behavior implementation class.
+   
+<pre lang="ABAP">
+   "Modify travel instance
+    MODIFY ENTITIES OF zad164_r_travel_XXX IN LOCAL MODE
+      ENTITY zad164_travel_XXX
+        UPDATE FIELDS ( OverallStatus )
+        WITH VALUE #( FOR key IN keys ( %tky          = key-%tky
+                                        OverallStatus = travel_status-rejected ) )
+      FAILED failed.
+
+    "Read changed data for action result
+    READ ENTITIES OF zad164_r_travel_XXX IN LOCAL MODE
+      ENTITY zad164_travel_XXX
+        ALL FIELDS WITH
+        CORRESPONDING #( keys )
+      RESULT DATA(travels).
+
+    result = VALUE #( FOR travel IN travels ( %tky   = travel-%tky
+                                              %param = travel ) ).
+</pre>
+
+   <br>![](images/AD164_E2_3_5.png)
+
+8.	Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+    	Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, respective status will be set against
+  	List should look like this before selecting a record
+  	<br>![](images/AD164_E2_3_6.png)
+
+  	List should look like this after selecting a record
    <br>![](images/AD164_E2_3_7.png)
-  After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
+
+  	After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
    <br>![](images/AD164_E2_3_8.png)
   
 </details>
  
-## Exercise 2.4 Demo Only - How to add additional fields/ associations/compositions to existing data models via Developer Extensibility 
+## Exercise 2.4 Demo Only - Add additional fields/ associations/compositions to existing data models via Developer Extensibility 
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
+
 After completing this demo, we will have created a parent-child ( composition ) association between our Agency and Agency Review Rating entities and hence will be able to use this to calculate average rating for the agency. 
-Showcase the following 
+Showcase the following
  - Current Agency CDS Entity : ZAD164_R_AGENCY
- - Extend View defintion on Agency Entity : ZAD164_R_AGENCY_EXTEND
- - View which is accessed as an extnesion : ZAD164_R_AGENCY_REVIEW
+ - Extend View definition on Agency Entity : ZAD164_R_AGENCY_EXTEND
+ - View which is accessed as an extension : ZAD164_R_AGENCY_REVIEW
   
  </details>
  
@@ -219,10 +265,11 @@ Showcase the following
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
 1.	Open the data definition for view **ZAD164_R_TRAVEL_000** from the project explorer and add a new association to **ZAD164_R_AGENCY_REVIEW** and compute the average rating for the agency from the data from association.
-   NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
+   	NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
-<br>![](images/AD164_E2_5_1.png)
-```abap
+    <br>![](images/AD164_E2_5_1.png)
+
+<pre lang="ABAP">
     @AccessControl.authorizationCheck: #NOT_REQUIRED
     @EndUserText.label: 'Data model for Travel App'
     define root view entity zad164_r_travel_XXX 
@@ -285,13 +332,15 @@ The entity should now look like this
       local_last_changed_by,
       local_last_changed_at,
       last_changed_at
-```
-2. Save and activate the CDS entity
-3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the cds entity **ZAD164_R_TRAVEL_XXX**.
+      </pre>
+
+2.	Save and activate the CDS entity
+3.	Open the data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the computed average rating for the agency from the data from the CDS entity **ZAD164_R_TRAVEL_XXX**.
 
 The entity should now look like this
-<br>![](images/AD164_E2_5_2.png)
-```abap
+    <br>![](images/AD164_E2_5_2.png)
+
+<pre lang="ABAP">
       @EndUserText.label: 'Travel Projection View'
       @AccessControl.authorizationCheck: #CHECK
       
@@ -338,13 +387,15 @@ The entity should now look like this
             _Customer,
             _OverallStatus
       }   
-```
-4. Save and activate the CDS entity
-5. Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
+</pre>
+
+4.	Save and activate the CDS entity
+5.	Open the meta data definition for the consumption view **ZAD164_C_TRAVEL_XXX** from the project explorer and add the UI annotations for the Agency Rating.
  
-The entity should now look like this
-<br>![](images/AD164_E2_5_3.png)
-```abap
+   The entity should now look like this
+   <br>![](images/AD164_E2_5_3.png)
+
+<pre lang="ABAP">
       @Metadata.layer: #CORE
 
       @UI: { headerInfo: { typeName: 'Travel',
@@ -438,13 +489,15 @@ The entity should now look like this
         LocalLastChangedAt;
       
       }
-```
-6. Save and activate the metadata extension of the projection CDS entity
-7. Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
-    Note that the Agency Review will be available as a Rating indicator on the list view as shown below
+</pre>
+
+6.	Save and activate the metadata extension of the projection CDS entity
+7.	Test the implementation of rating indicator from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+    	Note that the Agency Review will be available as a Rating indicator on the list view as shown below
  
-  <br>![](images/AD164_E2_5_4.png)
-8. To understand other controls that can be used in the fiori app, go through the [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
+  	<br>![](images/AD164_E2_5_4.png)
+
+8.	To understand other controls that can be used in the fiori app, go through the [Fiori Feature Showcase App Guide](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide).
 
 </details>
 
@@ -457,3 +510,4 @@ You've now enriched our travel booking data model with transactional capabilitie
  </details>
 
 Continue to - [Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](../../README.md#addtional-demos)
+![image](https://github.com/SAP-samples/teched2023-AD164/assets/33621897/46f95d7c-d831-4fc4-924a-085ed440f1ca)
