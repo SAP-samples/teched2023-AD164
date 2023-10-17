@@ -245,7 +245,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
       
  </details>
  
-## Exercise 1.4 Create a CDS projection views
+## Exercise 1.4 Create a CDS projection view
 [^Top of page](#)
 
  <details>
