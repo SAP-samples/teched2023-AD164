@@ -4,7 +4,7 @@ After the **[Getting Started](../ex0/README.md)**, you will create your own RAP 
 
 This RAP BO represents an Travel Booking Approval application , where you can Approve OR Reject travel booking as a booking approver.
 
-## Exercise 1.0 Add system connection to ADT.
+## Exercise 1.0 Add system connection to ADT
 [^Top of page](#)
 
  <details>
