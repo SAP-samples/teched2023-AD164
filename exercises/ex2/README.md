@@ -228,7 +228,8 @@ After completing this exercise, you will have enabled the Travel booking approva
    <br>![](images/AD164_E2_3_5.png)
 
 8.	Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
-    	Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, respective status will be set against
+
+ Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, respective status will be set against
   	List should look like this before selecting a record
   	<br>![](images/AD164_E2_3_6.png)
 
