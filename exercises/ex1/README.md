@@ -4,7 +4,7 @@ After the **[Getting Started](../ex0/README.md)**, you will create your own RAP 
 
 This RAP BO represents an Travel Booking Approval application , where you can Approve OR Reject travel booking as a booking approver.
 
-## Exercise 1.1 Create ABAP Package
+## Exercise 1.1 Create an ABAP Package
 [^Top of page](#)
 
  <details>
@@ -34,7 +34,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
 </details>
 
 
-## Exercise 1.2 Create Database Table
+## Exercise 1.2 Create a Database Table
 [^Top of page](#)
 
 <details>
@@ -94,7 +94,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    6. Save ![save icon](images/adt_save.png) and activate ![activate icon](images/adt_activate.png) the changes.
 </details>
 
-## Exercise 1.3 Create CDS data model
+## Exercise 1.3 Create a CDS data model
 [^Top of page](#)
 
  <details>
@@ -208,7 +208,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
       
  </details>
  
-## Exercise 1.4 Create CDS projection views
+## Exercise 1.4 Create a CDS projection views
 [^Top of page](#)
 
  <details>
