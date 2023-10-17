@@ -2,18 +2,18 @@
 
 In order to participate in this hands-on session, you MUST have installed the latest version of Eclipse and the latest version of the ABAP Development Tools (ADT) in Eclipse. Please check the following two short documents on how to if you have not already done it:
 
-1. Install the ABAP Development Tools (ADT)
+1. Install ABAP Development Tools (ADT)
 2. Adapt the Web Browser settings in your ADT installation
 You also need a user on an SAP S/4HANA Cloud/On Premise ABAP system.
 
-Let's start the excercise and see whether everything is ready to go. Please make sure you have all the necessary prerequsistes listed below. If not, please raise your voice during the meeting so that we can assist you early in the session.
+Let's start the excercise and see whether everything is ready to go. Please make sure you have all the necessary prerequsistes listed below. If not, please raise your voice during the sesion so that the speakers can assist you early in the session.
 
 ## Prerequisites
-1.	Installation of the ABAP Development Tools (ADT): Go to this tutorial and carry out 	the steps of [Install ABAP Development Tools (ADT)](https://developers.sap.com/tutorials/abap-install-adt.html) , you don't need to do the
-    "Install abapGit plugin" part.
+1.	Installation of the ABAP Development Tools (ADT): Go to this tutorial and carry out the steps of [Install ABAP Development Tools (ADT)](https://developers.sap.com/tutorials/abap-install-adt.html) , you don't need to do the "Install abapGit plugin" part.
+
 2.	Adapt the Web Browser settings in your ADT installation
-   	*	In Eclipse, choose in the menu bar Window > Preferences.
-   	*	Enter Web Browser in the search field.
+   	*	In Eclipse, choose the menu bar **Window** > **Preferences**.
+   	*	Enter **'Web Browser'** in the search field.
    	*	Activate the radio button Use external web browser.
    	*	Select one of the listed external web browsers that are available, e.g. your Default system web browser (Please make sure that Internet Explorer is NOT selected).
 
