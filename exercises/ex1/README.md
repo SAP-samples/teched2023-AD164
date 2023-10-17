@@ -58,7 +58,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
     In the pop up for **Select an ABAP Package**, type ZAD164 as the search term and choose the entry **ZAD164** under the **Matching items:** window and click on **OK**.
    ![](images/AD164_E1_1_Step0_1.png) 
    
-2.	Right-click on the package **ZD164** ( if the Optional step 0 was performed ), Else Right-click on the System listed in the project explorer and select **New > ABAP Package** from the context menu. 
+2.	Right-click on the package **ZD164** ( if the Optional step 0 was performed ), Else Right-click on the System **HE4_400_AD164_EN** listed in the project explorer and select **New > ABAP Package** from the context menu. 
    ![](images/AD164_E1_1_Step1.png)
   	
 3.	Maintain the information provided below and click **Next >**.  
