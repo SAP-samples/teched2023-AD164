@@ -7,12 +7,14 @@ This repository contains the material for the SAP TechEd 2023 session called AD1
 
 ## Overview
 
-This course uses the well known travel booking reference app for classic ABAPers. During the course of this session, we will go through two demos and then followed by a hands-on providing an experience on how to handcode the same in ABAP Cloud with our well known ABAP Restful Application Programming Model ( RAP ). We will have short overview of the RAP artefacts thats gets generated and will see a Fiori elements preview of the app to check the developed OData UI service. 
-Additionaly, we have a short optional HandsOn exercise to enrich our existing fiori preview and hence our app utilizing ratings from the underlying Agency data model.
+This course uses the well known travel booking reference app for classic ABAPers. During the course of this session, we will go through two demos and then followed by a hands-on providing an experience on how to handcode the same in ABAP Cloud with our well known ABAP Restful Application Programming Model ( RAP ). We will have short overview of the RAP artefacts that gets generated and will see a Fiori elements preview of the app to check the developed OData UI service. 
+
+Additionally, we have a short optional HandsOn exercise to enrich our existing fiori preview and hence our app utilizing ratings from the underlying Agency data model.
+
 We also have demos showcasing - 
 1. Use ABAP Repository Object Generator in ADT to quickly generate RAP artefacts
 2. Behaviour Implementations - Managed, Managed with Additional Save and Unmanaged
-3. Ways to consume existing WRICEF Objects in new ABAP Cloud 
+3. Ways to consume existing WRICEF Objects in new ABAP Cloud
 
 ### Business Scenario 
 
@@ -21,15 +23,15 @@ We also have demos showcasing -
  
  **Create a custom BO for a specific business context**
 
- - An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This will be realized with RESTful ABAP Programming Model(RAP). 
+- An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This will be realized with RESTful ABAP Programming Model(RAP). 
 
- - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modeled with CDS entities to read and expose relevant data to the oData UI service ( please note this is the similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define how the data needs to be presented on the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implementations ( BIL ) which also includes two user defined custom actions APPROVE and REJECT, you will then expose releavnt RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
-   We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations with which we have enriched our data model via the MDE.
+ - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modelled with CDS entities to read and expose relevant data to the oData UI service ( please note this is the similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define how the data needs to be presented on the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implementations ( BIL ) which also includes two user defined custom actions APPROVE and REJECT, you will then expose relevant RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
+We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations with which we have enriched our data model via the MDE.
 
 Your application will look like this:
  ![Custom business application]( exercises/ex0/images/TravelBookingApprovalApp.png )
  
- - Now, the customer/partner wishes to enhance the existing travel booking approval  application with ratings from the Agency.  When an travel booking is being approved, it is good to see the agency review rating in the list. Using the developer extensibility and underlying datamodels in SAP S/4HANA OnPremise ABAP Environment, custom code can be added to existing business logic of the travel approval BO to fulfill this requirement.
+- Now, the customer/partner wishes to enhance the existing travel booking approval  application with ratings from the Agency.  When a travel booking is being approved, it is good to see the agency review rating in the list. Using the developer extensibility and underlying data models in SAP S/4HANA OnPremise ABAP Environment, custom code can be added to existing business logic of the travel approval BO to fulfil this requirement.
 
  Your application will finally look like this:
 
@@ -41,11 +43,11 @@ Your application will look like this:
 <details>
  <summary>Click to expand!</summary>
 
- The figure below illustrates the high-level architecture components of the ABAP RESTful Application Programming Model (RAP). It shows the main technologies and artefacts needed to build an SAP Fiori app or a Web API with RAP from a design time perspective.  
+The figure below illustrates the high-level architecture components of the ABAP RESTful Application Programming Model (RAP). It shows the main technologies and artefacts needed to build an SAP Fiori app or a Web API with RAP from a design time perspective.
  
  ![architecture](exercises/ex0/images/RAP_bigpicture.png)
  
- You can find a more information on the various RAP concepts on the SAP Help Portal.
+ You can find a more information on RAP concepts on the SAP Help Portal.
 
  </details>
  
@@ -53,7 +55,7 @@ Your application will look like this:
 ## Requirements
 
 To carry out the exercises of this repository, you need to
-1. Install the ABAP Development Tools (ADT) for the ABAP development parts
+1. Install the ABAP Development Tools (ADT) for ABAP development
 2. Have a browser ready, preferably Google Chrome, to see Fiori Elements preview
 
 The users for the development environment during the course will be provided to you by the hosts.
