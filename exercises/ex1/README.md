@@ -10,12 +10,12 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
  <details>
   <summary>Click to expand!</summary>
   
-0.  Optional [ If already exists ]   : Add **ZLOCAL** to **Favorite Packages** by right-click on the favourite packages and select **Add Package..**. 
+1. Add **ZAD164** to **Favorite Packages** via right-click on the favourite packages and select **Add Package..** from the context menu.
    ![](images/AD164_E1_1_Step0_0.png)
-    In the pop up for **Select an ABAP Package**, type ZLOCAL as the search term and choose the option **ZLOCAL** under the **Matching items:** window and click on **OK**.
-  ![](images/AD164_E1_1_Step0_1.png) 
+    In the pop up for **Select an ABAP Package**, type ZAD164 as the search term and choose the option **ZAD164** under the **Matching items:** window and click on **OK**.
+   ![](images/AD164_E1_1_Step0_1.png) 
    
-1.	Right-click on the package **`ZLOCAL** and select **New > ABAP Package** from the context menu. 
+2.	Right-click on the package **ZD164** and select **New > ABAP Package** from the context menu. 
    ![](images/AD164_E1_1_Step1.png)
   	
 3.	Maintain the information provided below and click **Next >**.  
@@ -25,8 +25,10 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
     ![](images/AD164_E1_1_Step2_1.png) 
     - Select TR `HE4K917646` from option **Choose from requests in which i am involved** OR choose option **Enter a request number** and  provide a transport request number `HE4K917646`
      ![](images/AD164_E1_1_Step2_2.png)
-     ![](images/AD164_E1_1_Step2_3.png) 
- 
+     ![](images/AD164_E1_1_Step2_3.png)
+
+ Note to Speakers : Tasks for the participants have to be created in the TR HE4K917646 to ensure that option "Choose from requests in which i am involved" is usable by participants.
+
 4.	Click **Finish** to finish creation of the package and add the package to favorite pacakges list.
    You should now see your new package in your Project Explorer.
      ![](images/AD164_E1_1_Final.png) 
