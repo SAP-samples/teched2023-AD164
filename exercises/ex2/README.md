@@ -233,10 +233,10 @@ After completing this exercise, you will have enabled the Travel booking approva
   	List should look like this before selecting a record
   	<br>![](images/AD164_E2_3_6.png)
 
-  	List should look like this after selecting a record
+ List should look like this after selecting a record
    <br>![](images/AD164_E2_3_7.png)
 
-  	After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
+ After clicking on the Approve action button, the record details should have the Overall Status set to Accepted
    <br>![](images/AD164_E2_3_8.png)
   
 </details>
