@@ -92,7 +92,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    1. Right-click on your ABAP package **`ZAD164_TRAVEL_###`** and select **New** > **Other ABAP Repository Object** from the context menu.
     ![](images/AD164_E1_2_1.png)
     
-   2. Search for **database table**, select it, and click **Next >**.
+   2. Search for **Database Table**, select it, and click **Next >**.
     ![](images/AD164_E1_2_2.png)
 
    3. Maintain the required information (`###` is your group ID) and click **Next >**.
