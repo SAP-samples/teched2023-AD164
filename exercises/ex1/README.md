@@ -63,7 +63,7 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
 2.	Maintain the information provided below and click **Next**.  
    - Name: **`ZAD164_TRAVEL_XXX`**
    - Description: _**`Travel Approval App XXX`**_
-   - Check ** `Add to favorite packages` **
+   - Check **`Add to favorite packages`**
    - Ensure that **Superpackage:** has value **ZAD164** 
    ![](images/AD164_E1_1_Step2_1.png) 
 3.	Select TR `HE4K917646` from option **Choose from requests in which i am involved** OR choose option **Enter a request number** and  provide a transport request number `HE4K917646`
