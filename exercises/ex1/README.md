@@ -34,7 +34,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
 7. In following step, enter the details given below and click **Next**
    
    - **Client** : **400*
-   Enter the user credendtials as supplied by the speaker during the session
+   - Enter the user credendtials as supplied by the speaker during the session
 
     ![](images/AD164_E1_0_Step5.png)
    
