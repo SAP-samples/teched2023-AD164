@@ -163,7 +163,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    ![](images/AD164_E1_3_5.png)
      
 6.	Replace the default source code with following code snippet:
-   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurrences of XXX with your user group number
+
+ **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurrences of XXX with your user group number
    <pre lang="ABAP">
           @AccessControl.authorizationCheck: #NOT_REQUIRED
           @EndUserText.label: 'Data model for Travel App XXX'
