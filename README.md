@@ -26,6 +26,7 @@ We also have demos showcasing -
 - An existing customer/partner wants to create a new business application for Travel Booking Approvals. Users of this approval App can either Approve or Reject a travel booking that is posted in the system. This will be realized with RESTful ABAP Programming Model(RAP). 
 
  - You’ll build the application step-by-step, starting with creating the database table to hold all the relevant travel booking, you will then create the RAP BOs ( interface and projections ) with the relevant nodes data modelled with CDS entities to read and expose relevant data to the oData UI service ( please note this is a similar data model that was also used in the second demo involving ALV with IDA ), we will enrich the generated data model with relevant UI annotations that help us define how the data needs to be presented on the UI by defining these in CDS Medata Data Extensions ( MDE ),  you will then enable transactional capabilities to the RAP BO using Behavior Definitions ( BDEFs ) and their Behavior implementations ( BIL ) which also includes two user defined custom actions APPROVE and REJECT, you will then expose relevant RAP artefacts using a Service Definition and bind it to an oDATA V2 / V4 UI protocol using the Service Binding.
+
 We then preview the generated OData UI service using the Fiori elements preview to see how the created UI service is rendered using the UI annotations with which we have enriched our data model via the MDE.
 
 Your application will look like this:
