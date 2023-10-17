@@ -5,30 +5,48 @@ After the **[Getting Started](../ex0/README.md)**, you will create your own RAP 
 This RAP BO represents an Travel Booking Approval application , where you can Approve OR Reject travel booking as a booking approver.
 
 ## Exercise 1.0 Add system connection to ADT.
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+    
 1. Open ABAP Developer Tools
 2. Add ABAP perspective to the IDE - Click on **Search** icon on the toolbar and type **ABAP** and select the entry **ABAP** under the perspectives
    ![](images/AD164_E1_0_Step1.png)
+   
 3. Select the ABAP Perspective to have the set of views related to ABAP development configured in the IDE
 4. Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ), If connections to other systems already exist in the project explorer, Right click in the **Project Explorer** view and selection option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
    ![](images/AD164_E1_0_Step2.png)
+   
 5. Click on **New system connection** hyperlink
    ![](images/AD164_E1_0_Step3.png)
+   
 6. Enter the following details in the **New ABAP Project Wizard** and click on next.
-   **System ID** : **HE4**
-   **Connection Type** : Choose **Custom Application Server** from the drop down menu
-   **Application Server** : **s4hana1.tdc.sap.com**
-   **Instance Number** : **00**
+   
+   - **System ID** : **HE4**
+   - **Connection Type** : Choose **Custom Application Server** from the drop down menu
+   - **Application Server** : **s4hana1.tdc.sap.com**
+   - **Instance Number** : **00**
    Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
+
    ![](images/AD164_E1_0_Step4.png)
+   
 7. In following step, enter the details given below and click **Next**
-   **Client** : **400*
+   
+   - **Client** : **400*
    Enter the user credendtials as supplied by the speaker during the session
+
     ![](images/AD164_E1_0_Step5.png)
+   
 8. In following step, enter the details given below and click **Finish**
-   **Project Name** : **HE4_400_AD164_EN**
+   - **Project Name** : **HE4_400_AD164_EN**
    ![](images/AD164_E1_0_Step6.png)
+
 9. A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
      ![](images/AD164_E1_0_Step7.png)
+   
+</details>   
+
 ## Exercise 1.1 Create an ABAP Package
 [^Top of page](#)
 
