@@ -76,6 +76,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - Demo 2 - Travel booking approval app using ABAP ALV with IDA
 
 - [Exercise 1 - Create Your Own Read Only UI Service](exercises/ex1/README.md#exercise-1---create-your-own-read-only-ui-service)
+    - [Exercise 1.0 - Add System Connection to ADT](https://github.com/SAP-samples/teched2023-AD164/blob/main/exercises/ex1/README.md#exercise-10-add-system-connection-to-adt)
     - [Exercise 1.1 - Create an ABAP Package](exercises/ex1/README.md#exercise-11-create-an-abap-package)
     - [Exercise 1.2 - Create a Database Table](exercises/ex1/README.md#exercise-12-create-a-database-table)
     - [Exercise 1.3 - Create a CDS data model](exercises/ex1/README.md#exercise-13-create-a-cds-data-model)
