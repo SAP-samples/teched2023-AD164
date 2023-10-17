@@ -15,7 +15,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
    ![](images/AD164_E1_0_Step1.png)
    
 3. Select the ABAP Perspective to have the set of views related to ABAP development configured in the IDE
-4. Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ), If connections to other systems already exist in the project explorer, Right click in the **Project Explorer** view and selection option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
+4. Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ). If connections to other systems already exist in the project explorer, right-click in the **Project Explorer** view and select option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
    ![](images/AD164_E1_0_Step2.png)
    
 5. In the **New ABAP Project** wizard, click on **New system connection** hyperlink
