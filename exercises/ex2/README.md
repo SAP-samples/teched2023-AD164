@@ -263,7 +263,8 @@ Showcase the following
 After completing these steps you will have included a new field for average rating in the travel booking data model which consumes the data from the entity that was added as part of developer extensibility demo.
 
 1.	Open the data definition for view **`ZAD164_R_TRAVEL_XXX`** from the project explorer and add a new association to **`ZAD164_R_AGENCY_REVIEW`** and compute the average rating for the agency from the data from association.
-   	NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
+
+  	NOTE: While using the avg(... ) function, the CDS entity prompts to use GROUP BY clause in CDS entity -> Use the quick assist to generate the required data
 The entity should now look like this
     <br>![](images/AD164_E2_5_1.png)
 
@@ -508,4 +509,4 @@ You've now enriched our travel booking data model with transactional capabilitie
  </details>
 
 Continue to - [Additional Demos - RAP Behavior implementations, Usage of ABAP Repository Object Generator, Consumption of WRICEF objects in ABAP Cloud](../../README.md#addtional-demos)
-![image](https://github.com/SAP-samples/teched2023-AD164/assets/33621897/46f95d7c-d831-4fc4-924a-085ed440f1ca)
+
