@@ -27,7 +27,7 @@ This RAP BO represents an Travel Booking Approval application , where you can Ap
    - **Connection Type** : Choose **Custom Application Server** from the drop down menu
    - **Application Server** : **s4hana1.tdc.sap.com**
    - **Instance Number** : **00**
-   Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
+   - Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
 
    ![](images/AD164_E1_0_Step4.png)
    
