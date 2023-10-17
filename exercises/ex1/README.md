@@ -149,7 +149,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   1.	Right-click on the data base table  **`ZAD164TRAVEL_XXX`** and select **New Data Definition** from the context menu.
      ![](images/AD164_E1_3_1.png)
 
-  2. Maintain the information provided below and click **Next >**.
+  2. Maintain the information provided below and click **Next**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: _**`Data model for Travel App XXX`**_ .   
@@ -166,7 +166,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
      
   6. Replace the default source code with following code snippet:
    
-   **Hint**: Hover the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
+   **Hint**: Hover over the code snippet and choose the _Copy raw contents_ icon <img src="images/CopyRawContents.png" alt="" width="30px"> appearing in the upper-right corner to copy it. Ensure to replace all occurences of XXX with your user group number
      
     ```ABAP
        @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -219,7 +219,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
       
    ![](images/AD164_E1_3_6_0.png)
      	
-   9. Maintain the information provided below and click **Next >**.
+   9. Maintain the information provided below and click **Next**.
 
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: **`Access Control for ZAD164_R_TRAVEL_XXX`** .   
@@ -228,7 +228,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   10. Select your transport request and click **Finish**.
     ![](images/AD164_E1_3_7.png)
 
-  11. An access control for the CDS projection entity with the following access control definition should get generated
+  11. An access control for the CDS entity with the following access control definition should get generated
      ![](images/AD164_E1_3_8.png)
 
   12. Replace the default source code with following code snippet:
