@@ -48,7 +48,7 @@ The figure below illustrates the high-level architecture components of the ABAP 
  
  ![architecture](exercises/ex0/images/RAP_bigpicture.png)
  
- You can find a more information on RAP concepts on the [SAP Help Portal](https://blogs.sap.com/2019/10/25/getting-started-with-the-abap-restful-programming-model/).
+ You can find a more information on RAP concepts on the [Getting Started with the ABAP RESTful Application Programming Model (RAP) Blog](https://blogs.sap.com/2019/10/25/getting-started-with-the-abap-restful-programming-model/).
 
  </details>
  
@@ -70,6 +70,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
  <summary>Click to expand!</summary>
 
 - [Getting Started](exercises/ex0/)
+  
    Demos - Travel Booking Approval App using ALVs
     - Demo 1 - Travel booking approval app using Classic ABAP ALV
     - Demo 2 - Travel booking approval app using ABAP ALV with IDA
