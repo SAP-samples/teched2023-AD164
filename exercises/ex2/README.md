@@ -80,7 +80,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
    
  </details>
  
-## Exercise 2.2 Create Behavior Definition for projection views
+## Exercise 2.2 Create Behavior Definition for projection view
 [^Top of page](#)
 
  <details>
@@ -117,7 +117,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
 
  </details>
 
-## Exercise 2.3 Enable Read Only UI service with custom actions
+## Exercise 2.3 Enable the UI service with custom actions
 [^Top of page](#)
 
  <details>
@@ -254,7 +254,7 @@ Showcase the following
   
  </details>
  
-## Exercise 2.5 Consume the data from extended view and Test using Fiori Elements Preview
+## Exercise 2.5 Consume data from extended view and Test using Fiori Elements Preview
 [^Top of page](#)
 
  <details>
