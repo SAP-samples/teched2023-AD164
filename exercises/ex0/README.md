@@ -21,7 +21,7 @@ Let's start the exercise and see whether everything is ready to go. Please make 
 
 	Note for participants of SAP events: You will receive the logon information (User and Password ) from the hosts during the event.
 	
- In almost every chapter of this tutorial there is a reference to a number ###, a 3 digit number. Make sure that this number ( which is unique ) was assigned to you by the moderators / speakers of this course and remember it well. 
+ In almost every chapter of this tutorial there is a reference to a number ###, a 3 digit number. Make sure that this number ( which is unique ) is assigned to you by the moderators / speakers of this course and remember it well. 
 
  It is important to use this number in order to create different names for applications and other artefacts. Having this unique number as a suffix for the names of the artefacts is mandatory since we will deploy all the artefacts to the same SAP S/4HANA OnPremise system, it is important that they all differ in the names and identifiers and thereby avoid any clashes in the names.
 
