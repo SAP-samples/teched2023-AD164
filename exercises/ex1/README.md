@@ -264,7 +264,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   1.	Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Data Definition** from the context menu.
     ![](images/AD164_E1_4_1.png)
 
-  2. Maintain the information provided below and click **Next >**.
+  2. Maintain the information provided below and click **Next**.
 
    - Name: **`ZAD164_C_TRAVEL_XXX`**
    - Description: **`Projection for Travel App XXX`** .   
@@ -337,7 +337,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    7.	Save and activate the object.
    8.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
     ![](images/AD164_E1_4_6_0.png)
-   9. Maintain the information provided below and click **Next >**.
+   9. Maintain the information provided below and click **Next**.
 
    - Name: **`ZAD164_C_TRAVEL_XXX`**
    - Description: **`Access Control for ZAD164_C_TRAVEL_XXX`** .   
@@ -372,7 +372,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.    
     ![](images/AD164_E1_4_9.png)
 
-   15. Maintain the information provided below and click **Next >**.
+   15. Maintain the information provided below and click **Next**.
 
        - Name: **`ZAD164_C_TRAVEL_XXX`**
        - Description: **`Metadata Extension for ZAD164_C_TRAVEL_XXX`** .   
@@ -381,7 +381,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    16. Select your transport request and click **Finish**.
     ![](images/AD164_E1_4_11.png)
 
-   17. An metadata extension for the CDS projection entity with the following metadata definition should get generated
+   17. A metadata extension for the CDS projection entity with the following metadata definition should get generated
      ![](images/AD164_E1_4_12.png)
 
    18. Replace the default source code with following code snippet:
@@ -476,19 +476,19 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    1. Right click on projection view **`ZAD164_C_TRAVEL_XXX`** and select create **New Service Definition** from the context menu.
       ![](images/AD164_E1_5_1.png)
      
-   2. Maintain the information provided below and click **Next >**
-    - Name: **`ZAD164_SD_TRAVEL_XXX`**
-    - Description: **Service Definition for Travel App XXX**
+   2. Maintain the information provided below and click **Next**
+      - Name: **`ZAD164_SD_TRAVEL_XXX`**
+      - Description: _**`Service Definition for Travel App XXX`**_
       
       ![](images/AD164_E1_5_2.png)
 
-   4. Select your transport request and press **Finish**. 
+   3. Select your transport request and press **Finish**. 
 
       ![](images/AD164_E1_5_3.png)
    5. A service definition for the projection CDS entity with the following details should get generated
       ![](images/AD164_E1_5_4.png)
 
-   6. Provide an alias name as `Travel` for the cds projection view that is being exposed. The service definition should now look like this
+   6. Provide an alias name as `Travel_XXX` for the cds projection view that is being exposed. The service definition should now look like this
       ![](images/AD164_E1_5_5.png)
 
    7. Save and activate the object.
@@ -500,7 +500,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
  <details>
   <summary>Click to expand!</summary>
-  1. Right-click on your service definition **`ZAD164_SD_TRAVEL_000`** and select **New Service Binding** from the context menu.
+  1. Right-click on your service definition **`ZAD164_SD_TRAVEL_XXX`** and select **New Service Binding** from the context menu.
   
    ![](images/AD164_E1_6_1.png)
 
@@ -515,10 +515,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
     ![](images/AD164_E1_6_3.png)
 4. A service binding for the service definition is created and the created artefact looks like this
     ![](images/AD164_E1_6_4.png)
-6. Activate and publish your service binding.
+6. Activate the service binding and publish your local service endpoint in the service binding, to see the projection view with its alias name  which was being exposed in the service definition being seen as a service available 
     ![](images/AD164_E1_6_5.png)
 
-7. Click on **Fiori elements App Preview** to preview your application in the browser.
+7. Select the service **Travel_XXX** and click on **Fiori elements App Preview** OR double click on the service **TRAVEL_XXX** to preview your application in the browser.
     ![](images/AD164_E1_6_6.png)
  </details>
  
@@ -530,7 +530,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
   This exercise will fill the relevant table with travel booking data.
   Perform the following steps
   
-  1. Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context men
+  1. Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context menu
  
    ![](images/AD164_E1_7_1.png)
    
