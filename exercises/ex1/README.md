@@ -51,13 +51,13 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
  <details>
   <summary>Click to expand!</summary>
   
-0.	[OPTIONAL]: Add **ZAD164** to **Favorite Packages** via right-click on the favorite packages and select **Add Package...** from the context menu.
+0.	[OPTIONAL]: Add **`ZAD164`** to **Favorite Packages** via right-click on the favorite packages and select **Add Package...** from the context menu.
    ![](images/AD164_E1_1_Step0_0.png)
 
-  	In the pop up for **Select an ABAP Package**, type **`ZAD164`** as the search term and choose the entry **ZAD164** under the **Matching items:** window and click on **OK**.
+  	In the pop up for **Select an ABAP Package**, type **`ZAD164`** as the search term and choose the entry **`ZAD164`** under the **Matching items:** window and click on **OK**.
    ![](images/AD164_E1_1_Step0_1.png) 
    
-1.	Right-click on the package **ZAD164** ( if the Optional step 0 was performed ), Else Right-click on the System **HE4_400_AD164_EN** listed in the project explorer and select **New > ABAP Package** from the context menu. 
+1.	Right-click on the package **`ZAD164`** ( if the Optional step 0 was performed ), Else Right-click on the System **`HE4_400_AD164_EN`** listed in the project explorer and select **New > ABAP Package** from the context menu. 
    ![](images/AD164_E1_1_Step1.png)
   	
 2.	Maintain the information provided below and click **Next**.  
@@ -91,10 +91,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 1.	Right-click on your ABAP package **`ZAD164_TRAVEL_###`** and select **New** > **Other ABAP Repository Object** from the context menu.
    ![](images/AD164_E1_2_1.png)
     
-2.	Search for **Database Table**, select it, and click **Next**.
+2.	Search for **Database Table**, select it, and click **`Next`**.
    ![](images/AD164_E1_2_2.png)
 
-3.	Maintain the required information (`###` is your group ID) and click **Next**.
+3.	Maintain the required information (`###` is your group ID) and click **`Next`**.
    - Name: **`ZAD164TRAVEL_###`**  
    - Description: _**`Persistence for Travel Booking ###`**_                  
    ![](images/AD164_E1_2_3.png)
@@ -148,15 +148,15 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 1.	Right-click on the data base table  **`ZAD164TRAVEL_XXX`** and select **New Data Definition** from the context menu.
    ![](images/AD164_E1_3_1.png)
 
-2.	Maintain the information provided below and click **Next**.
+2.	Maintain the information provided below and click **`Next`**.
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: _**`Data model for Travel App XXX`**_ .   
    ![](images/AD164_E1_3_2.png)
 
-3.	Select your transport request and click **Next**.
+3.	Select your transport request and click **`Next`**.
    ![](images/AD164_E1_3_3.png)
     
-4.	Select **Define Root View Entity** from the list of templates and click on **Finish**
+4.	Select **Define Root View Entity** from the list of templates and click on **`Finish`**
    ![](images/AD164_E1_3_4.png)
 
 5.	A CDS entity with the following data definition should get generated
@@ -214,12 +214,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 8.	Define Access Control for the above CDS Root view - Right-click on the CDS root entity  **`ZAD164_R_TRAVEL_XXX`** and select **New Access Control** from the context menu.
    ![](images/AD164_E1_3_6_0.png)
      	
-9.	Maintain the information provided below and click **Next**.
+9.	Maintain the information provided below and click **`Next`**.
    - Name: **`ZAD164_R_TRAVEL_XXX`**
    - Description: _**`Access Control for ZAD164_R_TRAVEL_XXX`**_ .   
    ![](images/AD164_E1_3_6.png)
 
-10.	Select your transport request and click **Finish**.
+10.	Select your transport request and click **`Finish`**.
     ![](images/AD164_E1_3_7.png)
 
 11.	An access control for the CDS entity with the following access control definition should get generated
@@ -261,10 +261,10 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    - Description: _**`Projection for Travel App XXX`**_ .   
    ![](images/AD164_E1_4_2.png)
     
-3.	Select your transport request and click **Next**.
+3.	Select your transport request and click **`Next`**.
    ![](images/AD164_E1_4_3.png)
     
-4.	Select **Define Projection View** from the list of templates and click on **Finish**
+4.	Select **Define Projection View** from the list of templates and click on **`Finish`**
    ![](images/AD164_E1_4_4.png)
 
 5.	A CDS projection entity with the following data definition should get generated
@@ -328,12 +328,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 7.	Save and activate the object.
 8.	Define Access Control for the above projection CDS Root view by right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Access Control** from the context menu.
    ![](images/AD164_E1_4_6_0.png)
-9.	Maintain the information provided below and click **Next**.
+9.	Maintain the information provided below and click **`Next`**.
    - Name: **`ZAD164_C_TRAVEL_XXX`**
    - Description: _**`Access Control for ZAD164_C_TRAVEL_XXX`**_ .   
    ![](images/AD164_E1_4_6.png)
 
-10.	Select your transport request and click **Next**.
+10.	Select your transport request and click **`Next`**.
     ![](images/AD164_E1_4_7.png)
 
 11.	An access control for the CDS projection entity with the following access control definition should get generated
@@ -362,12 +362,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 14.	Right-click on the CDS root entity  **`ZAD164_C_TRAVEL_XXX`** and select **New Metadata Extension** from the context menu.    
     ![](images/AD164_E1_4_9.png)
 
-15.	Maintain the information provided below and click **Next**.
+15.	Maintain the information provided below and click **`Next`**.
     - Name: **`ZAD164_C_TRAVEL_XXX`**
     - Description: _**`Metadata Extension for ZAD164_C_TRAVEL_XXX`**_ 
     ![](images/AD164_E1_4_10.png)
 
-16.	Select your transport request and click **Finish**.
+16.	Select your transport request and click **`Finish`**.
     ![](images/AD164_E1_4_11.png)
 
 17.	A metadata extension for the CDS projection entity with the following metadata definition should get generated
@@ -464,12 +464,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 1.	Right click on projection view **`ZAD164_C_TRAVEL_XXX`** and select create **New Service Definition** from the context menu.
    ![](images/AD164_E1_5_1.png)
      
-2.	Maintain the information provided below and click **Next**
+2.	Maintain the information provided below and click **`Next`**
    - Name: **`ZAD164_SD_TRAVEL_XXX`**
    - Description: _**`Service Definition for Travel App XXX`**_
    ![](images/AD164_E1_5_2.png)
 
-3.	Select your transport request and press **Finish**. 
+3.	Select your transport request and press **`Finish`**. 
    ![](images/AD164_E1_5_3.png)
 4.	A service definition for the projection CDS entity with the following details should get generated
    ![](images/AD164_E1_5_4.png)
@@ -490,13 +490,13 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 1.	Right-click on your service definition **`ZAD164_SD_TRAVEL_XXX`** and select **New Service Binding** from the context menu.
    ![](images/AD164_E1_6_1.png)
 
-2.	Maintain the information provided below and click **Next**.
+2.	Maintain the information provided below and click **`Next`**.
    - Name: **`ZAD164_UI_TRAVEL_000_O4`**
    - Description: _**`OData V4 UI service for Travel App 000`**_
    - Binding Type: **`OData version V4 UI`**
    ![](images/AD164_E1_6_2.png)
 
-3.	Select your transport request and press **Finish**.
+3.	Select your transport request and press **`Finish`**.
    ![](images/AD164_E1_6_3.png)
 4.	A service binding for the service definition is created and the created artefact looks like this
    ![](images/AD164_E1_6_4.png)
@@ -519,12 +519,12 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 1.	Right Click on package **`ZAD164_TRAVEL_XXX`** and select **New** -> **ABAP Class** from context menu
  	 ![](images/AD164_E1_7_1.png)
    
-2.	Maintain the following details and click on **Next**
+2.	Maintain the following details and click on **`Next`**
    - Name : **`ZAD164_CL_FL_TRVL_DT_GEN_XXX`**
    - Description: _**`Flight Travel Data Generator XXX`**_
    ![](images/AD164_E1_7_2.png)
    
-3.	Select your transport request and press **Finish**. 
+3.	Select your transport request and press **`Finish`**. 
    ![](images/AD164_E1_7_3.png)
 4.	Replace the generated code in the global class with the following code
 
