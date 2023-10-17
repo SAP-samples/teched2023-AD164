@@ -14,7 +14,8 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
    ![](images/AD164_E1_0_Step1.png)
 
 3.	Select the ABAP Perspective to have the set of views related to ABAP development configured in the IDE
-4.	Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ). If connections to other systems already exist in the project explorer, right-click in the **Project Explorer** view and select option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
+4.	Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ).
+   If connections to other systems already exist in the project explorer, right-click in the **Project Explorer** view and select option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
    ![](images/AD164_E1_0_Step2.png)
    
 5.	In the **New ABAP Project** wizard, click on **New system connection** hyperlink
@@ -34,11 +35,11 @@ This RAP BO represents a Travel Booking Approval application, where you can Appr
    - Enter the user credentials as supplied by the speaker during the session
    ![](images/AD164_E1_0_Step5.png)
    
-9.	In following step, enter the details given below and click **Finish**
+8.	In following step, enter the details given below and click **Finish**
    - **Project Name** : **HE4_400_AD164_EN**
    ![](images/AD164_E1_0_Step6.png)
 
-10.	A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
+9.	A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
     ![](images/AD164_E1_0_Step7.png)
    
 </details>   
