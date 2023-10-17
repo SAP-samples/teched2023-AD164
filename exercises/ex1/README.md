@@ -1,4 +1,4 @@
-![image](https://github.com/SAP-samples/teched2023-AD164/assets/33621897/98b6cb21-c352-4480-9c40-7c42b0932c2d)# Exercise 1 - Create Your Own Read Only UI Service
+# Exercise 1 - Create Your Own Read Only UI Service
 
 After the **[Getting Started](../ex0/README.md)**, you will create your own RAP business object (BO) in the present exercise.
 
