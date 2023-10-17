@@ -1,7 +1,6 @@
 # Exercise 1 - Create Your Own Read Only UI Service
 
-After the **[Getting Started](../ex0/README.md)**, you will create your own RAP business object (BO) in the present exercise.
-
+After the **[Getting Started](../ex0/README.md)**, you will create your own RAP business object (BO) in the current exercise.
 This RAP BO represents an Travel Booking Approval application , where you can Approve OR Reject travel booking as a booking approver.
 
 ## Exercise 1.0 Add system connection to ADT
