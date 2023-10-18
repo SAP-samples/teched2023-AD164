@@ -181,6 +181,18 @@ After completing this exercise, you will have enabled the Travel booking approva
 5.	Save and activate the behavior implementation class.
 6.	Implement action ACCEPT, save and activate the behavior implementation class.
    
+   Define few constants in the **Local Types** of the class in the class defintion where the action **ACCEPT** and **REJECT** is defined
+<pre lang="ABAP">
+ CONSTANTS:
+      BEGIN OF travel_status,
+        open     TYPE c LENGTH 1 VALUE 'O', "Open
+        accepted TYPE c LENGTH 1 VALUE 'A', "Accepted
+        rejected TYPE c LENGTH 1 VALUE 'X', "Rejected
+      END OF travel_status.
+</pre>
+   
+ The following  is the code for *ACCEPT** action.
+ 
 <pre lang="ABAP">
    "Modify travel instance
     MODIFY ENTITIES OF zad164_r_travel_XXX IN LOCAL MODE
