@@ -181,7 +181,7 @@ After completing this exercise, you will have enabled the Travel booking approva
 5.	Save and activate the behavior implementation class.
 6.	Implement action ACCEPT, save and activate the behavior implementation class.
    
-   Define few constants in the **Local Types** of the class in the class defintion where the action **ACCEPT** and **REJECT** is defined
+   Define a constant **travel_status** with the status **open**, **accepted** and **rejected** in the **Local Types** of the class defintion where the action **ACCEPT** and **REJECT** is defined.
 <pre lang="ABAP">
  CONSTANTS:
       BEGIN OF travel_status,
