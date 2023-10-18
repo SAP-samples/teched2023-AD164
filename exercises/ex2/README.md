@@ -404,7 +404,7 @@ The entity should now look like this
                                                 ], 
                                      visualizations: [{type: #AS_LINEITEM}]  }] }
       
-      annotate entity zad164_c_travel_000 with
+      annotate entity zad164_c_travel_XXX with
       {
         @UI.facet: [{ type: #IDENTIFICATION_REFERENCE }]
         @UI.hidden: true
