@@ -119,9 +119,9 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        customer_id           : zad164_customer_id not null;
        begin_date            : zad164_begin_date;
        end_date              : zad164_end_date;
-       @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+       @Semantics.amount.currencyCode : 'zad164travel_XXX.currency_code'
        booking_fee           : zad164_booking_fee;
-       @Semantics.amount.currencyCode : 'zad164travel_000.currency_code'
+       @Semantics.amount.currencyCode : 'zad164travel_XXX.currency_code'
        total_price           : zad164_total_price;
        currency_code         : zad164_currency_code;
        description           : zad164_description;
@@ -169,7 +169,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
           @AccessControl.authorizationCheck: #NOT_REQUIRED
           @EndUserText.label: 'Data model for Travel App XXX'
           define root view entity zad164_r_travel_XXX 
-            as select from zad164travel_000 as travel_XXX
+            as select from zad164travel_XXX as travel_XXX
             
             association [0..1] to zad164_r_agency             as _Agency         on $projection.AgencyId = _Agency.AgencyId
             association [0..1] to zad164_r_customer           as _Customer       on $projection.CustomerId = _Customer.CustomerID
@@ -236,7 +236,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
        grant
          select
            on
-             zad164_r_travel_000
+             zad164_r_travel_XXX
                where
                  1 = 1;
                  
@@ -491,8 +491,8 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
    ![](images/AD164_E1_6_1.png)
 
 2.	Maintain the information provided below and click **`Next`**.
-   - Name: **`ZAD164_UI_TRAVEL_000_O4`**
-   - Description: _**`OData V4 UI service for Travel App 000`**_
+   - Name: **`ZAD164_UI_TRAVEL_XXX_O4`**
+   - Description: _**`OData V4 UI service for Travel App XXX`**_
    - Binding Type: **`OData version V4 UI`**
    ![](images/AD164_E1_6_2.png)
 
@@ -553,7 +553,7 @@ A TravelBooking entity defines general data, such as the agency, customer, begin
 
 5.	Save and activate the object.
 6.	Execute the class as an ABAP Console Application using the **`F9`** key.
-7.	Open the Service Binding **`ZAD164_UI_TRAVEL_000_O4`**
+7.	Open the Service Binding **`ZAD164_UI_TRAVEL_XXX_O4`**
    Double click on the **Preview** button to test the fiori elements preview with the generated data
    ![](images/AD164_E1_7_4.png)
      
