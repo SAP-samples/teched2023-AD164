@@ -80,51 +80,14 @@ In this exercise, we enrich our travel booking data model with transactional cap
    
  </details>
  
-## Exercise 2.2 Create Behavior Definition for projection view
-[^Top of page](#)
-
- <details>
-  <summary>Click to expand!</summary>
-
-1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
-  	![](images/AD164_E2_2_1.png)
-  
-2.	Maintain a description and click **`Next`**.
-   - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
-   ![](images/AD164_E2_2_2.png)
- 
-3.	Select your transport request and click **`Finish`**.
-   ![](images/AD164_E2_2_3.png)
-
-4.	A projection behavior definition for the projection CDS entity with the following details should get generated
-  	![](images/AD164_E2_2_4.png)
- 
-5.	Replace the default source code with following with code snippet:
-
-    <pre lang="ABAP">
-     projection;
-     strict ( 2 );
-     
-     define behavior for zad164_c_travel_XXX alias zad164_travel_XXX
-     {
-     
-       use action acceptTravel;
-       use action rejectTravel;
-     }
-     </pre>
- 
-6.	Save and activate the object.
-
- </details>
-
-## Exercise 2.3 Enable the UI service with custom actions
+## Exercise 2.2 Enable the UI service with custom actions
 [^Top of page](#)
 
  <details>
   <summary>Click to expand!</summary>
   
-After completing this exercise, you will have enabled the Travel booking approval app with **APPROVE** and **REJECT** custom actions.
-1.	Open the behavior definition for view **`ZAD164_R_TRAVEL_XXX`** from the project explorer and add two custom actions APPROVE and REJECT.
+After completing this exercise, you will have enabled the Travel booking approval app with **acceptTravel** and **rejectTravel** custom actions.
+1.	Open the behavior definition for view **`ZAD164_R_TRAVEL_XXX`** from the project explorer and add two custom actions acceptTravel and rejectTravel.
    	The behavior definition should look like this after defining the custom actions
   	<br>![](images/AD164_E2_3_1.png)
   	
@@ -179,7 +142,7 @@ After completing this exercise, you will have enabled the Travel booking approva
    <br>![](images/AD164_E2_3_3.png)
 
 5.	Save and activate the behavior implementation class.
-6.	Implement action ACCEPT, save and activate the behavior implementation class.
+6.	Implement action **acceptTravel**, save and activate the behavior implementation class.
    
    Define a constant **travel_status** with the status **open**, **accepted** and **rejected** in the **Local Types** of the class defintion where the action **ACCEPT** and **REJECT** is defined.
 <pre lang="ABAP">
@@ -191,7 +154,7 @@ After completing this exercise, you will have enabled the Travel booking approva
       END OF travel_status.
 </pre>
    
- The following  is the code for *ACCEPT** action.
+ The following  is the code for *acceptTravel** action method.
  
 <pre lang="ABAP">
    "Modify travel instance
@@ -215,7 +178,7 @@ After completing this exercise, you will have enabled the Travel booking approva
 
    <br>![](images/AD164_E2_3_4.png)
 
-7.	Implement action REJECT, save and activate the behavior implementation class.
+7.	Implement action **rejectTravel** method, save and activate the behavior implementation class.
    
 <pre lang="ABAP">
    "Modify travel instance
@@ -238,8 +201,45 @@ After completing this exercise, you will have enabled the Travel booking approva
 </pre>
 
    <br>![](images/AD164_E2_3_5.png)
+   
+</details>
 
-8.	Test the implementation of ACCEPT and REJECT actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
+## Exercise 2.3 Create Behavior Definition for projection view
+[^Top of page](#)
+
+ <details>
+  <summary>Click to expand!</summary>
+
+1.	Right-click your projection view **`ZAD164_C_TRAVEL_XXX`** and select **New Behavior Definition** from the context menu.
+  	![](images/AD164_E2_2_1.png)
+  
+2.	Maintain a description and click **`Next`**.
+   - Description: _**`Projection Behavior implementation for ZAD164_C_TRAVEL_XXX`**_
+   ![](images/AD164_E2_2_2.png)
+ 
+3.	Select your transport request and click **`Finish`**.
+   ![](images/AD164_E2_2_3.png)
+
+4.	A projection behavior definition for the projection CDS entity with the following details should get generated
+  	![](images/AD164_E2_2_4.png)
+ 
+5.	Replace the default source code with following code snippet:
+
+    <pre lang="ABAP">
+     projection;
+     strict ( 2 );
+     
+     define behavior for zad164_c_travel_XXX alias zad164_travel_XXX
+     {
+     
+       use action acceptTravel;
+       use action rejectTravel;
+     }
+     </pre>
+ 
+6.	Save and activate the object.
+
+7.	Test the implementation of **acceptTravel** and **rejectTravel** actions from **Preview** functionality of the UI oData service of the service binding **ZAD164_UI_TRAVEL_XXX_O4**
 
  Note that the buttons ACCEPT and REJECT will be active once we select a data record and on clicking the buttons, respective status will be set against
   	List should look like this before selecting a record
