@@ -31,7 +31,7 @@ In this exercise, we enrich our travel booking data model with transactional cap
        define behavior for zad164_r_travel_XXX alias zad164_travel_XXX
        persistent table zad164travel_XXX
        lock master
-       authorization master ( instance )
+       authorization master ( global )
        etag master LocalLastChangedAt
        {
        //  create;
