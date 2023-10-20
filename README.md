@@ -88,8 +88,8 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
 
 - [Exercise 2 - Enhance the Read Only UI service with Transactional Capabilities and showcase developer extensibility and Fiori feature](exercises/ex2#exercise-2---enhance-the-read-only-ui-service-with-transactional-capabilities-and-showcase-developer-extensibility-and-fiori-feature)
     - [Exercise 2.1 - Create a Behavior Definition for CDS data model](exercises/ex2#exercise-21-create-behavior-definition-for-cds-data-model)
-    - [Exercise 2.2 - Create a Projection of the Behavior Definition for projection view](exercises/ex2#exercise-22-create-behavior-definition-for-projection-view)
-    - [Exercise 2.3 - Enable the UI service with custom actions](exercises/ex2#exercise-23-enable-the-ui-service-with-custom-actions)
+    - [Exercise 2.2 Enable the UI service with custom actions](exercises/ex2/README.md#exercise-22-enable-the-ui-service-with-custom-actions)
+    - [Exercise 2.3 - xercise 2.3 Create Behavior Definition for projection view](exercises/ex2#exercise-23-create-behavior-definition-for-projection-view)
     - [Exercise 2.4 - Demo Only - Add additional fields/ associations/compositions to existing data models via Developer Extensibility](exercises/ex2#exercise-24-demo-only---add-additional-fields-associationscompositions-to-existing-data-models-via-developer-extensibility)
     - [Exercise 2.5 - Consume data from extended view and Test using Fiori Elements Preview](exercises/ex2#exercise-25-consume-data-from-extended-view-and-test-using-fiori-elements-preview)
       
